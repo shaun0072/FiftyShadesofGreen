@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: $BGColor;
+	max-width: 1200px;
+}
+img {
+	max-width: 100%;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+a {
+	text-decoration: none;
+}

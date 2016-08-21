@@ -1,0 +1,48 @@
+body {
+	font: 16px $baseFont;
+}
+/********************Navigation************************/
+.tab-name {
+	font: 400 1.4em $baseFont;
+	letter-spacing: 1px;
+	color: white;	
+}
+ul.submenu {
+	a {
+	font-size: 1.1em;
+	color: $softGrey;
+    }
+} 
+/********************HEADER************************/
+.contact_info {
+	a {
+		font: 1.4em $baseFont;
+		line-height: 1.3em;
+		letter-spacing: 1.8px;
+		color: green;
+		font-weight: 300;
+	}
+}
+/********************HOME PAGE************************/
+/*****Carousel*******/
+.carousel_info_box {
+	color: white;
+	font-family: $baseFont;
+	.info_box_title{
+		font-size: 1.8em;
+		letter-spacing: 1.5px;
+		font-weight: 600;
+	}
+	.info_box_paragraph{
+		font-size: 1em;
+		line-height: 1.3em;
+		font-weight: 300;
+	}
+}
+/*****Services,About,Gallery,Contact Section*******/
+.section_heading_cont {
+	font: 1.5em $specialFont1;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}

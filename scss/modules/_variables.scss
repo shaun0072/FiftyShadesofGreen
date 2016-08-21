@@ -1,0 +1,39 @@
+/**********Colors************/
+$BGColor          : #eaeaea;
+$accentColor :   #509e3c;
+$softGrey    :  #8c8c8c;   
+
+
+
+/**********Typography************/
+$baseFont      :  'Hind', sans-serif;
+$specialFont1  : 'Inconsolata', monospace;
+
+/**********Mixins************/
+
+
+/**********Extends************/
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+/*********************Media Queries*********************/
+$tablet-width : 768px;
+$desktop-width : 1024px;
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
