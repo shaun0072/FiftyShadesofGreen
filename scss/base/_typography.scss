@@ -16,8 +16,8 @@ ul.submenu {
 /********************HEADER************************/
 .contact_info {
 	a {
-		font: 1.4em $baseFont;
-		line-height: 1.3em;
+		font: 1.2em $baseFont;
+		line-height: 1.5em;
 		letter-spacing: 1.8px;
 		color: green;
 		font-weight: 300;
@@ -39,10 +39,20 @@ ul.submenu {
 		font-weight: 300;
 	}
 }
+.carousel_cont_4 .carousel_info_box {
+	input[type="text"] {
+		color: black;
+		font: 1.6em $baseFont;
+	}
+	input[type="submit"] {
+		font-size: 1.4em;
+	}
+}
 /*****Services,About,Gallery,Contact Section*******/
-.section_heading_cont {
-	font: 1.5em $specialFont1;
+.section_title {
+	font: 1.3em $specialFont1;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	color: $softGrey;
 
 }

@@ -401,8 +401,8 @@ ul.submenu a {
 
 /********************HEADER************************/
 .contact_info a {
-  font: 1.4em "Hind", sans-serif;
-  line-height: 1.3em;
+  font: 1.2em "Hind", sans-serif;
+  line-height: 1.5em;
   letter-spacing: 1.8px;
   color: green;
   font-weight: 300; }
@@ -421,11 +421,19 @@ ul.submenu a {
     line-height: 1.3em;
     font-weight: 300; }
 
+.carousel_cont_4 .carousel_info_box input[type="text"] {
+  color: black;
+  font: 1.6em "Hind", sans-serif; }
+
+.carousel_cont_4 .carousel_info_box input[type="submit"] {
+  font-size: 1.4em; }
+
 /*****Services,About,Gallery,Contact Section*******/
-.section_heading_cont {
-  font: 1.5em "Inconsolata", monospace;
+.section_title {
+  font: 1.3em "Inconsolata", monospace;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: #8c8c8c; }
 
 .nav-outer-cont {
   width: 250px;
@@ -547,14 +555,14 @@ header {
 
 /************************CAROUSEL******************************/
 .horizontal_row {
-  background: #cccccc;
+  background: #ccc;
   border: none;
   height: 1.5px;
   margin-bottom: 20px; }
 
 .carousel_cont {
   position: relative;
-  max-height: 400px; }
+  max-height: 350px; }
 
 .carousel_info_box {
   background: rgba(0, 0, 0, 0.7);
@@ -572,26 +580,28 @@ header {
 
 .carousel_cont_1 .carousel_info_box {
   bottom: 25px;
-  right: 25px; }
+  right: 70px; }
 
 .carousel_cont_2 .carousel_info_box {
   bottom: 25px;
-  left: 25px; }
+  left: 70px; }
 
 .carousel_cont_3 .carousel_info_box {
-  top: 25px;
+  top: 40px;
   bottom: initial;
-  right: 25px; }
+  right: 70px; }
 
 .carousel_cont_4 .carousel_info_box {
-  bottom: 123px;
-  left: 236px; }
+  bottom: 70px;
+  left: 257px;
+  box-shadow: -1px 29px 85px 7px rgba(0, 0, 0, 0.75); }
   .carousel_cont_4 .carousel_info_box h3.form_title {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 15px; }
   .carousel_cont_4 .carousel_info_box input[type="text"] {
     width: 100%;
     height: 50px;
-    padding: 5px; }
+    padding: 10px; }
   .carousel_cont_4 .carousel_info_box input[type="submit"] {
     background: green;
     margin-top: 15px;
@@ -634,12 +644,18 @@ header {
 .services_section {
   margin-top: 50px; }
 
-.section_heading_cont {
-  display: flex; }
-  .section_heading_cont .section_title {
-    flex-basis: 13%; }
-  .section_heading_cont .services {
-    flex-basis: 87%; }
+.section_title {
+  border-top: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 45px; }
+  .section_title span {
+    display: block;
+    float: left;
+    padding: 0 10px 0 0;
+    margin: -5px 0 0 0;
+    background-color: #eaeaea; }
 
 div.services_cont {
   background: white;
@@ -654,13 +670,14 @@ ul.services_list {
 li.service_item {
   flex-basis: 33%;
   position: relative;
-  padding: 30px; }
+  padding: 45px; }
   li.service_item a {
     display: inline-block;
     width: 100%;
     height: 100%; }
   li.service_item img {
-    transition: box-shadow .2s; }
+    transition: box-shadow .2s;
+    border-radius: 5px; }
     li.service_item img:hover {
       box-shadow: 10px 10px 5px grey; }
 
