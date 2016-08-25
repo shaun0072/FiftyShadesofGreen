@@ -1,49 +1,12 @@
 /************************GENERAL******************************/
 .mainarea {
-	margin-left: 250px;
+	margin-left: 215px;
 	padding: 0 50px 0 75px;
 	transition: margin-left .5s;
 	background: $BGColor; 
 	min-height: 100vh;
 	width: 100%;
-	max-width: calc(100vw - 300px);
-}
-/************************HEADER******************************/
-header {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	.logo {
-		flex-basis: calc(100% - 150px);
-		margin-top: -15px;
-		margin-bottom: -25px;
-	}
-}
-.logo {
-	img {
-		height: 150px;
-		margin-left: -28px;
-	}
-}
-.contact_info {
-	a {
-		display: block;
-	}
-	a[href^="tel"] {
-		background-image: url(../assets/svg/phone.svg);
-		background-repeat: no-repeat;
-		background-size: 27px;
-		background-position-x: 4px;
-		background-position-y: 4px;
-		padding-left: 29px;
-	}
-	a[href^="mailto"] {
-		background-image: url('../assets/svg/email.svg');
-		background-repeat: no-repeat;
-		background-size: 25px 25px;
-		background-position-y: 2px;
-		padding-left: 30px;
-	}
+	max-width: calc(100vw - 225px);
 }
 /************************CAROUSEL******************************/
 .horizontal_row {
@@ -54,11 +17,11 @@ header {
 }
 .carousel_cont {
 	position: relative;
-	max-height: 350px; 
+	max-height: 315px; 
 }
 .carousel_info_box {
 	background: rgba(0,0,0,0.7);
-	padding: 25px 15px;
+	padding: 22px 13px;
 	position: absolute;
 	bottom: 25px;
 	right: 25px;
@@ -74,20 +37,20 @@ header {
 }
 .carousel_cont_1 .carousel_info_box {
 	bottom: 25px;
-	right: 70px;
+	right: 30px;
 }
 .carousel_cont_2 .carousel_info_box {
 	bottom: 25px;
-	left: 70px;
+	left: 30px;
 }
 .carousel_cont_3 .carousel_info_box {
 	top: 40px;
 	bottom: initial;
-	right: 70px;
+	right: 40px;
 }
 .carousel_cont_4 .carousel_info_box {
-	bottom: 70px;
-    left: 257px;
+	bottom: 51px;
+    left: 232px;
 	box-shadow: -1px 29px 85px 7px rgba(0,0,0,0.75);
 	h3.form_title {
 		text-align: center;
@@ -95,23 +58,26 @@ header {
 	}
 	input[type="text"] {
 		width: 100%;
-		height: 50px;
+		height: 43px;
 		padding: 10px;
 	}
 	input[type="submit"] {
 		background: green;
 		margin-top: 15px;
 		width: 100%;
-		height: 50px;
+		height: 43px;
 		text-align: center;
 	}
 }
 /*********Slick Adjustments*********/
 .slick-dots {
-	bottom: -10px;
+	bottom: -9px;
+}
+.slick-dots li {
+	margin: 0 3px;
 }
 .slick-dots li button:before {
-	font-size: 16px;
+	font-size: 14px;
 }
 .slick-dots li.slick-active button:before {
 	color: $accentColor;
@@ -128,7 +94,7 @@ header {
 }
 .slick-prev:before, 
 .slick-next:before {
-	font-size: 60px;
+	font-size: 45px;
 	line-height: 0;
 }
 .carousel_section:hover .slick-arrow {
