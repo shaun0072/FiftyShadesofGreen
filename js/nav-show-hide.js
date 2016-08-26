@@ -4,13 +4,13 @@ $('.nav_toggle_btn').on('click', function() {
 		
 	if( $navigationStatus === '0px') {
 	
-		$('.nav-outer-cont').css('margin-left', '-250px');
+		$('.nav-outer-cont').css('margin-left', '-225px');
 		$('.nav_toggle_btn .arrow').css('transform', $pointingRight);
 		$('.mainarea').css('margin-left', '0px');
 	} else {
 		
 		$('.nav-outer-cont').css('margin-left', '0px');
 		$('.nav_toggle_btn .arrow').css('transform', 'rotateY(0deg)');
-		$('.mainarea').css('margin-left', '250px');
+		$('.mainarea').css('margin-left', '225px');
 	}
 })

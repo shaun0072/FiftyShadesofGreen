@@ -391,7 +391,7 @@ body {
 
 /********************Navigation************************/
 .tab-name {
-  font: 400 1.4em "Hind", sans-serif;
+  font: 400 1.25em "Hind", sans-serif;
   letter-spacing: 1px;
   color: white; }
 
@@ -401,11 +401,11 @@ ul.submenu a {
 
 /********************HEADER************************/
 .contact_info a {
-  font: 1.4em "Hind", sans-serif;
-  line-height: 1.3em;
+  font: 1.1em "Hind", sans-serif;
+  line-height: 1.4em;
   letter-spacing: 1.8px;
   color: green;
-  font-weight: 300; }
+  font-weight: 200; }
 
 /********************HOME PAGE************************/
 /*****Carousel*******/
@@ -413,22 +413,62 @@ ul.submenu a {
   color: white;
   font-family: "Hind", sans-serif; }
   .carousel_info_box .info_box_title {
-    font-size: 1.8em;
-    letter-spacing: 1.5px;
+    font-size: 1.6em;
+    letter-spacing: 1.2px;
     font-weight: 600; }
   .carousel_info_box .info_box_paragraph {
-    font-size: 1em;
-    line-height: 1.3em;
+    font-size: .9em;
+    line-height: 1.15em;
     font-weight: 300; }
 
+.carousel_cont_4 .carousel_info_box input[type="text"] {
+  color: black;
+  font: 1.3em "Hind", sans-serif; }
+
+.carousel_cont_4 .carousel_info_box input[type="submit"] {
+  font-size: 1.25em; }
+
 /*****Services,About,Gallery,Contact Section*******/
-.section_heading_cont {
-  font: 1.5em "Inconsolata", monospace;
+.section_title {
+  font: 1.2em "Inconsolata", monospace;
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  color: #8c8c8c; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  header .logo {
+    flex-basis: calc(100% - 150px);
+    margin-top: -13px;
+    margin-bottom: -25px; }
+
+.logo img {
+  height: 135px;
+  margin-left: -25px; }
+
+.contact_info a {
+  display: block; }
+
+.contact_info a[href^="tel"] {
+  background-image: url(../assets/svg/phone.svg);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position-x: 8px;
+  background-position-y: 3px;
+  padding-left: 29px; }
+
+.contact_info a[href^="mailto"] {
+  background-image: url(../assets/svg/email.svg);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position-y: 2px;
+  background-position-x: 4px;
+  padding-left: 30px; }
 
 .nav-outer-cont {
-  width: 250px;
+  width: 225px;
   position: fixed;
   height: 100%;
   background: linear-gradient(to left, rgba(179, 179, 179, 0.75) 0, #ffffff 15px, #ffffff 100%);
@@ -438,26 +478,26 @@ ul.submenu a {
   position: absolute;
   background: green;
   border-radius: 3px 7px 7px 3px;
-  top: 150px;
-  left: 251px;
+  top: 135px;
+  left: 226px;
   cursor: pointer; }
   .nav_toggle_btn .arrow {
     display: inline-block;
-    padding: 2px 5px;
+    padding: 1px 4px;
     color: white;
-    font-size: 2.2em;
+    font-size: 2em;
     border-radius: 3px 7px 7px 3px;
     transition: transform 1.3s; }
 
 .nav-inner-cont {
-  margin-top: 75%; }
+  margin-top: 150px; }
 
 .services-cont {
-  margin-top: 60px; }
+  margin-top: 54px; }
 
 .tab-cont {
   background: #509e3c;
-  padding: 2px 0 2px 23px;
+  padding: 2.5px 0 2.5px 20px;
   margin-top: 2px;
   opacity: .42;
   display: flex;
@@ -478,14 +518,15 @@ ul.submenu a {
   .tab-cont .home-icon svg {
     transform: rotate(0);
     padding-top: 5px;
-    fill: white; }
+    fill: white;
+    margin-top: 4px; }
 
 nav .submenu-icon,
 nav svg,
 nav #submenu-arrow {
   display: inline-block;
-  height: 25px;
-  width: 25px; }
+  height: 22px;
+  width: 22px; }
 
 ul.submenu {
   display: none; }
@@ -501,64 +542,32 @@ ul.submenu {
     margin-left: 30px; }
 
 .active {
-  border-left: 5px solid green; }
+  border-left: 4px solid green; }
 
 /************************GENERAL******************************/
 .mainarea {
-  margin-left: 250px;
+  margin-left: 215px;
   padding: 0 50px 0 75px;
   transition: margin-left .5s;
   background: #eaeaea;
   min-height: 100vh;
   width: 100%;
-  max-width: calc(100vw - 300px); }
-
-/************************HEADER******************************/
-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; }
-  header .logo {
-    flex-basis: calc(100% - 150px);
-    margin-top: -15px;
-    margin-bottom: -25px; }
-
-.logo img {
-  height: 150px;
-  margin-left: -28px; }
-
-.contact_info a {
-  display: block; }
-
-.contact_info a[href^="tel"] {
-  background-image: url(../assets/svg/phone.svg);
-  background-repeat: no-repeat;
-  background-size: 27px;
-  background-position-x: 4px;
-  background-position-y: 4px;
-  padding-left: 29px; }
-
-.contact_info a[href^="mailto"] {
-  background-image: url("../assets/svg/email.svg");
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-  background-position-y: 2px;
-  padding-left: 30px; }
+  max-width: calc(100vw - 225px); }
 
 /************************CAROUSEL******************************/
 .horizontal_row {
-  background: #cccccc;
+  background: #ccc;
   border: none;
   height: 1.5px;
   margin-bottom: 20px; }
 
 .carousel_cont {
   position: relative;
-  max-height: 400px; }
+  max-height: 315px; }
 
 .carousel_info_box {
   background: rgba(0, 0, 0, 0.7);
-  padding: 25px 15px;
+  padding: 22px 13px;
   position: absolute;
   bottom: 25px;
   right: 25px;
@@ -572,39 +581,44 @@ header {
 
 .carousel_cont_1 .carousel_info_box {
   bottom: 25px;
-  right: 25px; }
+  right: 30px; }
 
 .carousel_cont_2 .carousel_info_box {
   bottom: 25px;
-  left: 25px; }
+  left: 30px; }
 
 .carousel_cont_3 .carousel_info_box {
-  top: 25px;
+  top: 40px;
   bottom: initial;
-  right: 25px; }
+  right: 40px; }
 
 .carousel_cont_4 .carousel_info_box {
-  bottom: 123px;
-  left: 236px; }
+  bottom: 51px;
+  left: 232px;
+  box-shadow: -1px 29px 85px 7px rgba(0, 0, 0, 0.75); }
   .carousel_cont_4 .carousel_info_box h3.form_title {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 15px; }
   .carousel_cont_4 .carousel_info_box input[type="text"] {
     width: 100%;
-    height: 50px;
-    padding: 5px; }
+    height: 43px;
+    padding: 10px; }
   .carousel_cont_4 .carousel_info_box input[type="submit"] {
     background: green;
     margin-top: 15px;
     width: 100%;
-    height: 50px;
+    height: 43px;
     text-align: center; }
 
 /*********Slick Adjustments*********/
 .slick-dots {
-  bottom: -10px; }
+  bottom: -9px; }
+
+.slick-dots li {
+  margin: 0 3px; }
 
 .slick-dots li button:before {
-  font-size: 16px; }
+  font-size: 12px; }
 
 .slick-dots li.slick-active button:before {
   color: #509e3c; }
@@ -621,7 +635,7 @@ header {
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 60px;
+  font-size: 45px;
   line-height: 0; }
 
 .carousel_section:hover .slick-arrow {
@@ -634,12 +648,18 @@ header {
 .services_section {
   margin-top: 50px; }
 
-.section_heading_cont {
-  display: flex; }
-  .section_heading_cont .section_title {
-    flex-basis: 13%; }
-  .section_heading_cont .services {
-    flex-basis: 87%; }
+.section_title {
+  border-top: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 45px; }
+  .section_title span {
+    display: block;
+    float: left;
+    padding: 0 10px 0 0;
+    margin: -5px 0 0 0;
+    background-color: #eaeaea; }
 
 div.services_cont {
   background: white;
@@ -654,13 +674,14 @@ ul.services_list {
 li.service_item {
   flex-basis: 33%;
   position: relative;
-  padding: 30px; }
+  padding: 45px; }
   li.service_item a {
     display: inline-block;
     width: 100%;
     height: 100%; }
   li.service_item img {
-    transition: box-shadow .2s; }
+    transition: box-shadow .2s;
+    border-radius: 5px; }
     li.service_item img:hover {
       box-shadow: 10px 10px 5px grey; }
 
