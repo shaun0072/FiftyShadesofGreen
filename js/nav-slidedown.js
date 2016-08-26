@@ -17,26 +17,26 @@ $('.submenu-icon').on('click', function() {
 		if( $thisSubmenu !== $clickedsubmenu ) {
 			$(this).slideUp();
 			$(this).siblings('div.tab-cont').find('svg').css({
-				'-webkit-transform'      : pointingRight,
-				'-moz-transform' : MOZpointingRight
+				'-webkit-transform'  : pointingRight,
+				'-moz-transform'     : MOZpointingRight
 				})
 		}
 	});
 	
 	$submenu.slideToggle();
+		console.log($transformValue);
 		console.log($MOZtransformValue);
-		console.log(MOZpointingRight);
 
 	if( pointingRight === $transformValue || MOZpointingRight === $MOZtransformValue) {
 		
 		$transformValue = $svgClicked.css({
-			'-webkit-transform'      : pointingDown,
-			'-moz-transform' : 'rotate(360deg)'
+			'-webkit-transform'   :  pointingDown,
+			'-moz-transform'      : 'rotate(360deg)'
 			});
 	} else {
 		$transformValue = $svgClicked.css({
-			'-webkit-transform'      : pointingRight,
-			'-moz-transform' : MOZpointingRight
+			'-webkit-transform'   : pointingRight,
+			'-moz-transform'      : MOZpointingRight
 			});
 	}
 })

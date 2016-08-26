@@ -511,7 +511,7 @@ header {
     cursor: pointer; }
   .tab-cont svg {
     fill: white;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
     -moz-transform: rotate(270deg);
     transition: transform .5s;
     transform-origin: 50% 50%; }
