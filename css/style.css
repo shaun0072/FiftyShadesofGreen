@@ -513,6 +513,8 @@ header {
     fill: white;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(270deg);
+    transform: rotate(180deg);
+    -webkit-transition: -webkit-transform .5s;
     transition: transform .5s;
     transform-origin: 50% 50%; }
   .tab-cont .home-icon svg {
@@ -594,7 +596,7 @@ ul.submenu {
 
 .carousel_cont_4 .carousel_info_box {
   bottom: 51px;
-  left: 232px;
+  left: 300px;
   box-shadow: -1px 29px 85px 7px rgba(0, 0, 0, 0.75); }
   .carousel_cont_4 .carousel_info_box h3.form_title {
     text-align: center;
@@ -624,10 +626,13 @@ ul.submenu {
   color: #509e3c; }
 
 .slick-arrow {
-  display: none; }
+  display: none;
+  height: 45px;
+  width: 45px;
+  top: 167px; }
 
 .slick-next {
-  right: 40px; }
+  right: 2px; }
 
 .slick-prev {
   left: 0px;
@@ -635,8 +640,7 @@ ul.submenu {
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 45px;
-  line-height: 0; }
+  font-size: 45px; }
 
 .carousel_section:hover .slick-arrow {
   display: block; }
