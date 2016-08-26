@@ -440,7 +440,7 @@ header {
   align-items: center;
   justify-content: flex-end; }
   header .logo {
-    flex-basis: calc(100% - 205px);
+    flex-basis: calc(100% - 207px);
     margin-top: -13px;
     margin-bottom: -25px; }
 
