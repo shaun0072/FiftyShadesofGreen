@@ -3,7 +3,7 @@ header {
 	align-items: center;
 	justify-content: flex-end;
 	.logo {
-		flex-basis: calc(100% - 300px);
+		flex-basis: calc(100% - 205px);
 		margin-top: -13px;
 		margin-bottom: -25px;
 	}
@@ -21,10 +21,10 @@ header {
 	a[href^="tel"] {
 		background-image: url(../assets/svg/phone.svg);
 		background-repeat: no-repeat;
-		background-size: 23px;
-		background-position-x: 8px;
-		background-position-y: 3px;
-		padding-left: 29px;
+		background-size: 30px;
+		background-position-x: 9px;
+		background-position-y: 6px;
+		padding-left: 32px;
 	}
 	a[href^="mailto"] {
 		background-image: url(../assets/svg/email.svg);

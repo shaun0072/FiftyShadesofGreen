@@ -401,7 +401,7 @@ ul.submenu a {
 
 /********************HEADER************************/
 .contact_info a {
-  font: 1.1em "Hind", sans-serif;
+  font: 1.6em "Hind", sans-serif;
   line-height: 1.4em;
   letter-spacing: 1.8px;
   color: green;
@@ -440,7 +440,7 @@ header {
   align-items: center;
   justify-content: flex-end; }
   header .logo {
-    flex-basis: calc(100% - 300px);
+    flex-basis: calc(100% - 205px);
     margin-top: -13px;
     margin-bottom: -25px; }
 
@@ -454,10 +454,10 @@ header {
 .contact_info a[href^="tel"] {
   background-image: url(../assets/svg/phone.svg);
   background-repeat: no-repeat;
-  background-size: 23px;
-  background-position-x: 8px;
-  background-position-y: 3px;
-  padding-left: 29px; }
+  background-size: 30px;
+  background-position-x: 9px;
+  background-position-y: 6px;
+  padding-left: 32px; }
 
 .contact_info a[href^="mailto"] {
   background-image: url(../assets/svg/email.svg);
