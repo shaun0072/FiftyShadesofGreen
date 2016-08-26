@@ -440,7 +440,7 @@ header {
   align-items: center;
   justify-content: flex-end; }
   header .logo {
-    flex-basis: calc(100% - 150px);
+    flex-basis: calc(100% - 300px);
     margin-top: -13px;
     margin-bottom: -25px; }
 
@@ -519,7 +519,6 @@ header {
     transform-origin: 50% 50%; }
   .tab-cont .home-icon svg {
     transform: rotate(0);
-    padding-top: 5px;
     fill: white;
     margin-top: 4px; }
 
@@ -596,7 +595,7 @@ ul.submenu {
 
 .carousel_cont_4 .carousel_info_box {
   bottom: 51px;
-  left: 300px;
+  left: 25%;
   box-shadow: -1px 29px 85px 7px rgba(0, 0, 0, 0.75); }
   .carousel_cont_4 .carousel_info_box h3.form_title {
     text-align: center;
