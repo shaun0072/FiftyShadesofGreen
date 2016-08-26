@@ -9,6 +9,7 @@ var gulp         = require('gulp'),
     del          = require('del'),
     postcss      = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
+	cssnano      = require('cssnano'),
 	browserSync  = require('browser-sync'),
 	cssmin       = require('gulp-cssmin');
 
@@ -36,7 +37,7 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
 gulp.task('compileSass', function() {
   return gulp.src('scss/style.scss')
       .pipe(maps.init())
-	  .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
+	  .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }), cssnano() ]))
       .pipe(sass())
       .pipe(maps.write('./'))
       .pipe(gulp.dest('css'));

@@ -5,9 +5,10 @@
 		<title>Shades of Green</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href='https://fonts.googleapis.com/css?family=Hind:700,400,300,500,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/style.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 		<link rel="stylesheet" href="slick-1.6.0/slick/slick.css" />
 		<link rel="stylesheet" href="slick-1.6.0/slick/slick-theme.css" />
+		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
 	<body id="scrollTop">
 		<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">  
@@ -35,9 +36,9 @@
 			<div class="nav-inner-cont">
 				<div class="active home-cont">
 					<div class="tab-cont">
-						<div class="tab-name"><a href="#">Home</a></div>
+						<div class="tab-name"><a href="index.html">Home</a></div>
 						<div class="home-icon">
-							<a href="#">
+							<a href="index.html">
 								<svg>
 									<use xlink:href="#home-icon"></use>
 								</svg>
@@ -109,11 +110,11 @@
 				</div>
 			</div>
 		</nav>
-		<section class="mainarea">
+		<div class="mainarea">
 		
 			<header>
 				<div class="logo">
-					<img src="assets/svg/FiftyShadesofGreen.svg" />
+					<a href="index.html"><img src="assets/svg/FiftyShadesofGreen.svg" /></a>
 				</div>
 				<div class="contact_info">
 					<a href="tel:9186054763">(918)605-4763</a>
@@ -124,16 +125,112 @@
 			<section class="carousel_section">
 				<hr class="horizontal_row" size='20'/>
 				<div class="carousel single-item">
-				  <div>
-					one
+				  <div class="carousel_cont carousel_cont_1">
+					<img src="assets/img/carousel-pic1.jpg" />
+					<div class="carousel_info_box">
+						<h3 class="info_box_title">Information Title</h3>
+						<p class="info_box_paragraph">This is where you can write some stuff about the company of something that the company offers. You could make it a link that lead to somewhere else.</p>
+					</div>
 				  </div>
-				  <div>your content</div>
-				  <div>your content</div>
+				  <div class="carousel_cont carousel_cont_2">
+					<img src="assets/img/carousel-pic2.jpg" />
+					<div class="carousel_info_box">
+						<h3 class="info_box_title">Information Title</h3>
+						<p class="info_box_paragraph">This is where you can write some stuff about the company of something that the company offers. You could make it a link that lead to somewhere else.</p>
+					</div>
+				  </div>
+				  <div class="carousel_cont carousel_cont_3">
+					<img src="assets/img/carousel-pic3.jpg" />
+					<div class="carousel_info_box">
+						<h3 class="info_box_title">Information Title</h3>
+						<p class="info_box_paragraph">This is where you can write some stuff about the company of something that the company offers. You could make it a link that lead to somewhere else.</p>
+					</div>
+				  </div>
+				  <div class="carousel_cont carousel_cont_4">
+					<img src="assets/img/carousel-pic4.jpg" />
+					<div class="carousel_info_box">
+						<form>
+							<h3 class="info_box_title form_title">Get a Quote</h3>
+							<input type="text" placeholder="Email"/>
+							<input type="submit" value="Submit"/>
+						</form>
+					</div>
+				  </div>
 				</div>
+			</section>
+			
+			<section class="services_section">
+				<div class="section_heading_cont">
+					<div class="section_title">Services</div>
+					<hr class="horizontal_row services" size='20'/>
+				</div>
+				
+				<div class="services_cont">
+					<ul class="services_list">
+						<li class="service_item">
+							<a href="#">
+								<img src="assets/img/lawncare.jpg" alt="Lawncare"/>
+							</a>
+						</li>
+						<li class="service_item">
+							<a href="#">
+								<img src="assets/img/sodinstallation.jpg" alt="Sod Installation"/>
+							</a>
+						</li>
+						<li class="service_item">
+							<a href="#">
+								<img src="assets/img/tree-shrubbery.jpg" alt="Tree and Shrubbery"/>
+							</a>
+						</li>
+						<li class="service_item">
+							<a href="#">
+								<img src="assets/img/programs.jpg" alt="Programs"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+			</section>
+			
+			<section class="services_section">
+				<div class="section_heading_cont">
+					<div class="section_title">About</div>
+					<hr class="horizontal_row services" size='20'/>
+				</div>
+				
+				<div class="services_cont">
+					
+				</div>
+				
+			</section>
+			
+			<section class="services_section">
+				<div class="section_heading_cont">
+					<div class="section_title">Gallery</div>
+					<hr class="horizontal_row services" size='20'/>
+				</div>
+				
+				<div class="services_cont">
+					
+				</div>
+				
+			</section>
+			
+			<section class="services_section">
+				<div class="section_heading_cont">
+					<div class="section_title">Contact</div>
+					<hr class="horizontal_row services" size='20'/>
+				</div>
+				
+				<div class="services_cont">
+					
+				</div>
+				
 			</section>
 		
 		
-		</section>
+		</div>
 	<script type="text/javascript" src="dist/js/app.min.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
 	</body>
 </html>
