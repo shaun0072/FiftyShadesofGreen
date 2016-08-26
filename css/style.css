@@ -490,7 +490,7 @@ header {
     transition: transform 1.3s; }
 
 .nav-inner-cont {
-  margin-top: 75%; }
+  margin-top: 150px; }
 
 .services-cont {
   margin-top: 54px; }
@@ -618,7 +618,7 @@ ul.submenu {
   margin: 0 3px; }
 
 .slick-dots li button:before {
-  font-size: 14px; }
+  font-size: 12px; }
 
 .slick-dots li.slick-active button:before {
   color: #509e3c; }
