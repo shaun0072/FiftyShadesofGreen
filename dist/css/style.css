@@ -391,11 +391,7 @@ body {
 
 /********************Navigation************************/
 .tab-name {
-<<<<<<< HEAD
-  font: 400 1.4em "Hind", sans-serif;
-=======
   font: 400 1.25em "Hind", sans-serif;
->>>>>>> gh-pages
   letter-spacing: 1px;
   color: white; }
 
@@ -471,32 +467,8 @@ header {
   background-position-x: 4px;
   padding-left: 30px; }
 
-/********************HOME PAGE************************/
-/*****Carousel*******/
-.carousel_info_box {
-  color: white;
-  font-family: "Hind", sans-serif; }
-  .carousel_info_box .info_box_title {
-    font-size: 1.8em;
-    letter-spacing: 1.5px;
-    font-weight: 600; }
-  .carousel_info_box .info_box_paragraph {
-    font-size: 1em;
-    line-height: 1.3em;
-    font-weight: 300; }
-
-/*****Services,About,Gallery,Contact Section*******/
-.section_heading_cont {
-  font: 1.5em "Inconsolata", monospace;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
 .nav-outer-cont {
-<<<<<<< HEAD
-  width: 250px;
-=======
   width: 225px;
->>>>>>> gh-pages
   position: fixed;
   height: 100%;
   background: linear-gradient(to left, rgba(179, 179, 179, 0.75) 0, #ffffff 15px, #ffffff 100%);
@@ -506,32 +478,19 @@ header {
   position: absolute;
   background: green;
   border-radius: 3px 7px 7px 3px;
-<<<<<<< HEAD
-  top: 150px;
-  left: 251px;
-=======
   top: 135px;
   left: 226px;
->>>>>>> gh-pages
   cursor: pointer; }
   .nav_toggle_btn .arrow {
     display: inline-block;
     padding: 1px 4px;
     color: white;
-<<<<<<< HEAD
-    font-size: 2.2em;
-=======
     font-size: 2em;
->>>>>>> gh-pages
     border-radius: 3px 7px 7px 3px;
     transition: transform 1.3s; }
 
 .nav-inner-cont {
-<<<<<<< HEAD
-  margin-top: 75%; }
-=======
   margin-top: 150px; }
->>>>>>> gh-pages
 
 .services-cont {
   margin-top: 54px; }
@@ -588,11 +547,7 @@ ul.submenu {
 
 /************************GENERAL******************************/
 .mainarea {
-<<<<<<< HEAD
-  margin-left: 250px;
-=======
   margin-left: 215px;
->>>>>>> gh-pages
   padding: 0 50px 0 75px;
   transition: margin-left .5s;
   background: #eaeaea;
@@ -696,103 +651,6 @@ ul.submenu {
 .services_section {
   margin-top: 50px; }
 
-<<<<<<< HEAD
-/************************CAROUSEL******************************/
-.horizontal_row {
-  background: #cccccc;
-  border: none;
-  height: 1.5px;
-  margin-bottom: 20px; }
-
-.carousel_cont {
-  position: relative;
-  max-height: 400px; }
-
-.carousel_info_box {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 25px 15px;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
-  width: 60%;
-  max-width: 450px;
-  z-index: 10000; }
-  .carousel_info_box .info_box_title {
-    margin: 0; }
-  .carousel_info_box .info_box_paragraph {
-    margin: 5px 0; }
-
-.carousel_cont_1 .carousel_info_box {
-  bottom: 25px;
-  right: 25px; }
-
-.carousel_cont_2 .carousel_info_box {
-  bottom: 25px;
-  left: 25px; }
-
-.carousel_cont_3 .carousel_info_box {
-  top: 25px;
-  bottom: initial;
-  right: 25px; }
-
-.carousel_cont_4 .carousel_info_box {
-  bottom: 123px;
-  left: 236px; }
-  .carousel_cont_4 .carousel_info_box h3.form_title {
-    text-align: center; }
-  .carousel_cont_4 .carousel_info_box input[type="text"] {
-    width: 100%;
-    height: 50px;
-    padding: 5px; }
-  .carousel_cont_4 .carousel_info_box input[type="submit"] {
-    background: green;
-    margin-top: 15px;
-    width: 100%;
-    height: 50px;
-    text-align: center; }
-
-/*********Slick Adjustments*********/
-.slick-dots {
-  bottom: -10px; }
-
-.slick-dots li button:before {
-  font-size: 16px; }
-
-.slick-dots li.slick-active button:before {
-  color: #509e3c; }
-
-.slick-arrow {
-  display: none; }
-
-.slick-next {
-  right: 40px; }
-
-.slick-prev {
-  left: 0px;
-  z-index: 2; }
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 60px;
-  line-height: 0; }
-
-.carousel_section:hover .slick-arrow {
-  display: block; }
-
-.slick-dotted.slick-slider {
-  padding-bottom: 30px; }
-
-/************************SERVICES SECTION******************************/
-.services_section {
-  margin-top: 50px; }
-
-.section_heading_cont {
-  display: flex; }
-  .section_heading_cont .section_title {
-    flex-basis: 13%; }
-  .section_heading_cont .services {
-    flex-basis: 87%; }
-=======
 .section_title {
   border-top: 1px solid #ccc;
   display: block;
@@ -805,7 +663,6 @@ ul.submenu {
     padding: 0 10px 0 0;
     margin: -5px 0 0 0;
     background-color: #eaeaea; }
->>>>>>> gh-pages
 
 div.services_cont {
   background: white;
@@ -820,22 +677,14 @@ ul.services_list {
 li.service_item {
   flex-basis: 33%;
   position: relative;
-<<<<<<< HEAD
-  padding: 30px; }
-=======
   padding: 45px; }
->>>>>>> gh-pages
   li.service_item a {
     display: inline-block;
     width: 100%;
     height: 100%; }
   li.service_item img {
-<<<<<<< HEAD
-    transition: box-shadow .2s; }
-=======
     transition: box-shadow .2s;
     border-radius: 5px; }
->>>>>>> gh-pages
     li.service_item img:hover {
       box-shadow: 10px 10px 5px grey; }
 
