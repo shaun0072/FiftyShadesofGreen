@@ -401,7 +401,7 @@ ul.submenu a {
 
 /********************HEADER************************/
 .contact_info a {
-  font: 1.1em "Hind", sans-serif;
+  font: 1.6em "Hind", sans-serif;
   line-height: 1.4em;
   letter-spacing: 1.8px;
   color: green;
@@ -440,7 +440,7 @@ header {
   align-items: center;
   justify-content: flex-end; }
   header .logo {
-    flex-basis: calc(100% - 150px);
+    flex-basis: calc(100% - 207px);
     margin-top: -13px;
     margin-bottom: -25px; }
 
@@ -454,10 +454,10 @@ header {
 .contact_info a[href^="tel"] {
   background-image: url(../assets/svg/phone.svg);
   background-repeat: no-repeat;
-  background-size: 23px;
-  background-position-x: 8px;
-  background-position-y: 3px;
-  padding-left: 29px; }
+  background-size: 30px;
+  background-position-x: 9px;
+  background-position-y: 6px;
+  padding-left: 32px; }
 
 .contact_info a[href^="mailto"] {
   background-image: url(../assets/svg/email.svg);
@@ -511,13 +511,14 @@ header {
     cursor: pointer; }
   .tab-cont svg {
     fill: white;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
     -moz-transform: rotate(270deg);
+    transform: rotate(180deg);
+    -webkit-transition: -webkit-transform .5s;
     transition: transform .5s;
     transform-origin: 50% 50%; }
   .tab-cont .home-icon svg {
     transform: rotate(0);
-    padding-top: 5px;
     fill: white;
     margin-top: 4px; }
 
@@ -594,7 +595,7 @@ ul.submenu {
 
 .carousel_cont_4 .carousel_info_box {
   bottom: 51px;
-  left: 232px;
+  left: 25%;
   box-shadow: -1px 29px 85px 7px rgba(0, 0, 0, 0.75); }
   .carousel_cont_4 .carousel_info_box h3.form_title {
     text-align: center;
@@ -624,10 +625,13 @@ ul.submenu {
   color: #509e3c; }
 
 .slick-arrow {
-  display: none; }
+  display: none;
+  height: 45px;
+  width: 45px;
+  top: 167px; }
 
 .slick-next {
-  right: 40px; }
+  right: 2px; }
 
 .slick-prev {
   left: 0px;
@@ -635,8 +639,7 @@ ul.submenu {
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 45px;
-  line-height: 0; }
+  font-size: 45px; }
 
 .carousel_section:hover .slick-arrow {
   display: block; }
