@@ -1,7 +1,7 @@
 
 $('.single-item').slick({
 	dots          :  true,
-	autoplay      :  true
+	autoplay      :  false
 });
 
 $('button.slick-arrow').removeAttr('style');

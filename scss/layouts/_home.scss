@@ -7,6 +7,9 @@
 	min-height: 100vh;
 	width: 100%;
 	max-width: calc(100vw - 225px);
+	@include tablet {
+		display: none;
+	}
 }
 /************************CAROUSEL******************************/
 .horizontal_row {
@@ -49,8 +52,8 @@
 	right: 40px;
 }
 .carousel_cont_4 .carousel_info_box {
-	bottom: 51px;
-    left: 25%;
+	bottom: calc(50% - 100px);
+    left: calc(50% - 225px);
 	box-shadow: -1px 29px 85px 7px rgba(0,0,0,0.75);
 	h3.form_title {
 		text-align: center;

@@ -4,6 +4,9 @@
 	height: 100%;
 	background: linear-gradient(to left, (rgba(179,179,179,0.75)) 0, #ffffff 15px, #ffffff 100%);
 	transition: margin-left .5s;
+	@include mobile {
+		background: white;
+	}
 }
 .nav_toggle_btn { 
     position: absolute;
@@ -19,10 +22,16 @@
 		font-size: 2em;
 		border-radius: 3px 7px 7px 3px;
 		transition: transform 1.3s;
+		@include tablet {
+			padding: 0 8px;
+		}
 	}
 }
 .nav-inner-cont {
 	margin-top: 150px;
+	@include mobile {
+		margin-top: 50px;
+	}
 }
 .services-cont {
 	margin-top: 54px;

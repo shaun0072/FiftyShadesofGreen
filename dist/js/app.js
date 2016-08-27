@@ -2963,7 +2963,7 @@ $('.nav_toggle_btn').on('click', function() {
 
 $('.single-item').slick({
 	dots          :  true,
-	autoplay      :  true
+	autoplay      :  false
 });
 
 $('button.slick-arrow').removeAttr('style');

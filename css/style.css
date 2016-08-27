@@ -473,6 +473,9 @@ header {
   height: 100%;
   background: linear-gradient(to left, rgba(179, 179, 179, 0.75) 0, #ffffff 15px, #ffffff 100%);
   transition: margin-left .5s; }
+  @media (max-width: 450px) {
+    .nav-outer-cont {
+      background: white; } }
 
 .nav_toggle_btn {
   position: absolute;
@@ -488,9 +491,15 @@ header {
     font-size: 2em;
     border-radius: 3px 7px 7px 3px;
     transition: transform 1.3s; }
+    @media (max-width: 768px) {
+      .nav_toggle_btn .arrow {
+        padding: 0 8px; } }
 
 .nav-inner-cont {
   margin-top: 150px; }
+  @media (max-width: 450px) {
+    .nav-inner-cont {
+      margin-top: 50px; } }
 
 .services-cont {
   margin-top: 54px; }
@@ -554,6 +563,9 @@ ul.submenu {
   min-height: 100vh;
   width: 100%;
   max-width: calc(100vw - 225px); }
+  @media (max-width: 768px) {
+    .mainarea {
+      display: none; } }
 
 /************************CAROUSEL******************************/
 .horizontal_row {
@@ -594,8 +606,8 @@ ul.submenu {
   right: 40px; }
 
 .carousel_cont_4 .carousel_info_box {
-  bottom: 51px;
-  left: 25%;
+  bottom: calc(50% - 100px);
+  left: calc(50% - 225px);
   box-shadow: -1px 29px 85px 7px rgba(0, 0, 0, 0.75); }
   .carousel_cont_4 .carousel_info_box h3.form_title {
     text-align: center;
