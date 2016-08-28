@@ -408,7 +408,7 @@ ul.submenu a {
   font-weight: 200; }
   @media (max-width: 450px) {
     .contact_info a {
-      font-size: 1.2em;
+      font-size: 1.3em;
       line-height: 1em; } }
 
 /********************HOME PAGE************************/
@@ -457,7 +457,9 @@ header {
         margin-bottom: 0; } }
   @media (max-width: 450px) {
     header .contact_info {
-      flex-basis: 100%; } }
+      flex-basis: 100%;
+      margin-top: -35px;
+      z-index: 50; } }
 
 .logo img {
   height: 135px;
@@ -760,6 +762,9 @@ li.service_item {
   li.service_item img {
     transition: box-shadow .2s;
     border-radius: 5px; }
+    @media (max-width: 450px) {
+      li.service_item img {
+        border-radius: 0; } }
     li.service_item img:hover {
       box-shadow: 10px 10px 5px grey; }
       @media (max-width: 450px) {

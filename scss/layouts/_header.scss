@@ -18,6 +18,8 @@ header {
 	.contact_info {
 		@include mobile {
 			flex-basis: 100%;
+			margin-top: -35px;
+			z-index: 50;
 		}
 	}
 }

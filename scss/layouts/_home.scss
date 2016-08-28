@@ -190,6 +190,9 @@ li.service_item {
 	img {
 		transition: box-shadow .2s;
 		border-radius: 5px;
+		@include mobile {
+			border-radius: 0;
+		}
 		&:hover {
 			box-shadow: 10px 10px 5px grey;
 			@include mobile {
