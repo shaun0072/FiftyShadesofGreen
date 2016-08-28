@@ -406,6 +406,10 @@ ul.submenu a {
   letter-spacing: 1.8px;
   color: green;
   font-weight: 200; }
+  @media (max-width: 450px) {
+    .contact_info a {
+      font-size: 1em;
+      line-height: 1em; } }
 
 /********************HOME PAGE************************/
 /*****Carousel*******/
@@ -438,44 +442,57 @@ ul.submenu a {
 header {
   display: flex;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  flex-wrap: wrap; }
+  @media (max-width: 450px) {
+    header {
+      justify-content: center; } }
   header .logo {
     flex-basis: calc(100% - 207px);
     margin-top: -13px;
     margin-bottom: -25px; }
+    @media (max-width: 450px) {
+      header .logo {
+        flex-basis: 100%;
+        margin-bottom: 0; } }
 
 .logo img {
   height: 135px;
   margin-left: -25px; }
+  @media (max-width: 450px) {
+    .logo img {
+      width: 100%; } }
+
+@media (max-width: 450px) {
+  .contact_info {
+    flex-basis: 100%;
+    margin-top: -50px; } }
 
 .contact_info a {
   display: block; }
+  @media (max-width: 450px) {
+    .contact_info a {
+      float: right; } }
 
-.contact_info a[href^="tel"] {
-  background-image: url(../assets/svg/phone.svg);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position-x: 9px;
-  background-position-y: 6px;
-  padding-left: 32px; }
-
-.contact_info a[href^="mailto"] {
-  background-image: url(../assets/svg/email.svg);
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position-y: 2px;
-  background-position-x: 4px;
-  padding-left: 30px; }
+@media (max-width: 450px) {
+  a[href^="tel"] {
+    padding-left: 21px;
+    background: url(../assets/svg/phone.svg) no-repeat;
+    background-size: 20px 20px;
+    background-position-x: 7px;
+    background-position-y: -2px; } }
 
 .nav-outer-cont {
   width: 225px;
   position: fixed;
   height: 100%;
   background: linear-gradient(to left, rgba(179, 179, 179, 0.75) 0, #ffffff 15px, #ffffff 100%);
-  transition: margin-left .5s; }
-  @media (max-width: 450px) {
+  transition: margin-left .5s;
+  z-index: 100; }
+  @media (max-width: 768px) {
     .nav-outer-cont {
-      background: white; } }
+      background: white;
+      margin-left: -225px; } }
 
 .nav_toggle_btn {
   position: absolute;
@@ -493,7 +510,12 @@ header {
     transition: transform 1.3s; }
     @media (max-width: 768px) {
       .nav_toggle_btn .arrow {
-        padding: 0 8px; } }
+        padding: 0 8px;
+        transform: rotate(180deg); } }
+    @media (max-width: 450px) {
+      .nav_toggle_btn .arrow {
+        font-size: 1.6em;
+        transition: none; } }
 
 .nav-inner-cont {
   margin-top: 150px; }
@@ -565,9 +587,33 @@ ul.submenu {
   max-width: calc(100vw - 225px); }
   @media (max-width: 768px) {
     .mainarea {
-      display: none; } }
+      margin-left: 0;
+      max-width: 100%;
+      padding: 0; } }
 
 /************************CAROUSEL******************************/
+@media (max-width: 450px) {
+  .carousel_section {
+    display: none; } }
+
+.social-icon_cont {
+  display: flex;
+  justify-content: flex-end;
+  margin: -10px 0; }
+  .social-icon_cont .email-icon,
+  .social-icon_cont .fb-icon {
+    height: 17px;
+    width: 17px;
+    fill: #8c8c8c;
+    margin: 0 5px;
+    transition: fill .1s; }
+    .social-icon_cont .email-icon:hover,
+    .social-icon_cont .fb-icon:hover {
+      fill: #666666; }
+  .social-icon_cont .email-icon {
+    height: 20px;
+    width: 20px; }
+
 .horizontal_row {
   background: #ccc;
   border: none;
@@ -669,17 +715,28 @@ ul.submenu {
   width: 100%;
   padding: 0;
   margin-bottom: 45px; }
+  @media (max-width: 450px) {
+    .section_title {
+      margin-bottom: 15px; } }
   .section_title span {
     display: block;
     float: left;
     padding: 0 10px 0 0;
     margin: -5px 0 0 0;
     background-color: #eaeaea; }
+    @media (max-width: 450px) {
+      .section_title span {
+        padding: 0 7px;
+        margin: -9px 0 0 calc(50% - 52px); } }
 
 div.services_cont {
-  background: white;
+  background: rgba(255, 255, 255, 0.4);
   padding: 10px 20px;
   margin-top: 25px; }
+  @media (max-width: 450px) {
+    div.services_cont {
+      background: #eaeaea;
+      margin-top: 0; } }
 
 ul.services_list {
   display: flex;
@@ -690,6 +747,10 @@ li.service_item {
   flex-basis: 33%;
   position: relative;
   padding: 45px; }
+  @media (max-width: 450px) {
+    li.service_item {
+      flex-basis: 50%;
+      padding: 5px; } }
   li.service_item a {
     display: inline-block;
     width: 100%;
@@ -699,6 +760,9 @@ li.service_item {
     border-radius: 5px; }
     li.service_item img:hover {
       box-shadow: 10px 10px 5px grey; }
+      @media (max-width: 450px) {
+        li.service_item img:hover {
+          box-shadow: none; } }
 
 /************************ABOUT SECTION******************************/
 

@@ -4,8 +4,10 @@
 	height: 100%;
 	background: linear-gradient(to left, (rgba(179,179,179,0.75)) 0, #ffffff 15px, #ffffff 100%);
 	transition: margin-left .5s;
-	@include mobile {
+	z-index: 100;
+	@include tablet {
 		background: white;
+		margin-left: -225px;
 	}
 }
 .nav_toggle_btn { 
@@ -24,6 +26,11 @@
 		transition: transform 1.3s;
 		@include tablet {
 			padding: 0 8px;
+			transform: rotate(180deg);
+		}
+		@include mobile {
+			font-size: 1.6em;
+			transition: none;
 		}
 	}
 }

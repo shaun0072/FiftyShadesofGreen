@@ -8,10 +8,37 @@
 	width: 100%;
 	max-width: calc(100vw - 225px);
 	@include tablet {
-		display: none;
+		margin-left: 0;
+		max-width: 100%;
+		padding: 0;
 	}
 }
 /************************CAROUSEL******************************/
+.carousel_section {
+	@include mobile {
+		display: none;
+	}
+}
+.social-icon_cont {
+	display: flex;
+	justify-content: flex-end;
+	margin: -10px 0;
+	.email-icon,
+	.fb-icon {
+		height: 17px;
+		width: 17px;
+		fill: $softGrey;
+		margin: 0 5px;
+		transition: fill .1s;
+		&:hover {
+			fill: darken($softGrey, 15%);
+		}
+	}
+	.email-icon {
+		height: 20px;
+		width: 20px;
+	}
+}
 .horizontal_row {
 	background: #ccc;
 	border: none;
@@ -118,18 +145,29 @@
     width: 100%;
     padding: 0;
 	margin-bottom: 45px; 
+	@include mobile {
+		margin-bottom: 15px;
+	}
 	span {
 		display: block;
 		float: left;
 		padding: 0 10px 0 0;
 		margin: -5px 0 0 0;
 		background-color: $BGColor;
+		@include mobile {
+			padding: 0 7px;
+			margin: -9px 0 0 calc(50% - 52px);
+		}
 	}
 }
 div.services_cont {
-	background: white;
+	background: rgba(255,255,255,0.4);
 	padding: 10px 20px;
 	margin-top: 25px;
+	@include mobile {
+		background: $BGColor;
+		margin-top: 0;
+	}
 }
 ul.services_list {
 	display: flex;
@@ -140,6 +178,10 @@ li.service_item {
 	flex-basis: 33%;
 	position: relative;
 	padding: 45px;
+	@include mobile {
+		flex-basis: 50%;
+		padding: 5px;
+	}
 	a {
 		display: inline-block;
 		width: 100%;
@@ -150,6 +192,9 @@ li.service_item {
 		border-radius: 5px;
 		&:hover {
 			box-shadow: 10px 10px 5px grey;
+			@include mobile {
+				box-shadow: none;
+			}
 		}
 	}
 }
