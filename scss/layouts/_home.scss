@@ -6,7 +6,7 @@
 	background: $BGColor; 
 	min-height: 100vh;
 	width: 100%;
-	max-width: calc(100vw - 225px);
+	max-width: calc(100vw - 246px);
 	@include tablet {
 		margin-left: 0;
 		max-width: 100%;
@@ -57,7 +57,7 @@
 	right: 25px;
 	width: 60%;
 	max-width: 450px;
-	z-index: 10000;
+	z-index: 200;
 	.info_box_title {
 		margin: 0;
 	}

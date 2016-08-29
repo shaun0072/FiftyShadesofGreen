@@ -34,14 +34,6 @@ header {
 		}
 	}
 }
-.contact_info {
-	@include mobile {
-		flex-basis: 100%;
-	}
-	a {
-		display: block;
-	}
-}
 @include mobile {
 	a[href^="tel"] {
 		float: right;

@@ -471,13 +471,6 @@ header {
       margin-left: 0; } }
 
 @media (max-width: 450px) {
-  .contact_info {
-    flex-basis: 100%; } }
-
-.contact_info a {
-  display: block; }
-
-@media (max-width: 450px) {
   a[href^="tel"] {
     float: right;
     padding-left: 21px;
@@ -514,11 +507,11 @@ header {
     transition: transform 1.3s; }
     @media (max-width: 768px) {
       .nav_toggle_btn .arrow {
-        padding: 0 8px;
+        padding: 0 13px;
         transform: rotate(180deg); } }
     @media (max-width: 450px) {
       .nav_toggle_btn .arrow {
-        font-size: 1.6em;
+        font-size: 2em;
         transition: none; } }
 
 .nav-inner-cont {
@@ -588,7 +581,7 @@ ul.submenu {
   background: #eaeaea;
   min-height: 100vh;
   width: 100%;
-  max-width: calc(100vw - 225px); }
+  max-width: calc(100vw - 246px); }
   @media (max-width: 768px) {
     .mainarea {
       margin-left: 0;
@@ -636,7 +629,7 @@ ul.submenu {
   right: 25px;
   width: 60%;
   max-width: 450px;
-  z-index: 10000; }
+  z-index: 200; }
   .carousel_info_box .info_box_title {
     margin: 0; }
   .carousel_info_box .info_box_paragraph {

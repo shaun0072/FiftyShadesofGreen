@@ -25,11 +25,11 @@
 		border-radius: 3px 7px 7px 3px;
 		transition: transform 1.3s;
 		@include tablet {
-			padding: 0 8px;
+			padding: 0 13px;
 			transform: rotate(180deg);
 		}
 		@include mobile {
-			font-size: 1.6em;
+			font-size: 2em;
 			transition: none;
 		}
 	}
