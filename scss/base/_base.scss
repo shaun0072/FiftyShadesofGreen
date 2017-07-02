@@ -3,7 +3,7 @@
 }
 body {
 	background-color: $BGColor;
-	max-width: 1200px;
+	margin: 0 auto;
 }
 img {
 	max-width: 100%;
@@ -14,4 +14,7 @@ ul {
 }
 a {
 	text-decoration: none;
+}
+section:first-of-type {
+	padding-top: 155px;
 }

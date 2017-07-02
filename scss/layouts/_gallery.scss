@@ -1,0 +1,49 @@
+.mainarea .photo_gallery_section {
+	padding-top: 215px;
+}
+.photo_gallery{
+	
+	div {
+		background: $BGColor;
+		height: 700px;
+		width: 85%;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	img {
+		height: 100%;
+		min-width: initial;
+		margin: 0 auto;
+	}
+	
+	.slick-arrow {
+		display: block;
+		position: absolute;
+		top: 337px;
+	}
+	
+	.slick-next {
+		right: 125px;
+	}
+	
+	.slick-prev {
+		left: 125px;
+	}
+}
+
+.photo_gallery_nav {
+	
+	div {
+		height: 100px;
+		width: 50%;
+		margin: 0 auto;
+		background: black;
+	}
+	
+	img {
+		height: 100%;
+		min-width: initial;
+		margin: 0 auto;
+	}
+}

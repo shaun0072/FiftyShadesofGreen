@@ -6,9 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href='https://fonts.googleapis.com/css?family=Hind:700,400,300,500,600' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
 		<link rel="stylesheet" href="slick-1.6.0/slick/slick.css" />
 		<link rel="stylesheet" href="slick-1.6.0/slick/slick-theme.css" />
-		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body id="scrollTop">
 		<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">  
@@ -30,8 +32,16 @@
 				transform="translate(0,-448)"/>
 			</g>
 		  </symbol>
+		  <symbol id="email-icon" viewBox="0 0 512 512">
+			<title>email</title>
+			<path id="email-3-icon" d="M256.017,273.436L50.847,103.407h410.904L256.017,273.436z M255.983,328.898L50,158.244v250.349h412 V158.653L255.983,328.898z"/>
+		  </symbol>
+		  <symbol id="fb-icon" viewBox="0 0 56.693 56.693">
+			<title>facebook</title>
+			<path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/>
+		  </symbol>
 		</svg>		
-		<nav class="nav-outer-cont">
+		<nav class="nav-outer-cont-mobile">
 			<div class="nav_toggle_btn"><span class="arrow">&lsaquo;</span></div>
 			<div class="nav-inner-cont">
 				<div class="active home-cont">
@@ -110,6 +120,7 @@
 				</div>
 			</div>
 		</nav>
+		
 		<div class="mainarea">
 		
 			<header>
@@ -117,16 +128,52 @@
 					<a href="index.html"><img src="assets/svg/FiftyShadesofGreen.svg" /></a>
 				</div>
 				<div class="contact_info">
-					<a href="tel:9186054763">(918)605-4763</a>
+					<a href="tel:9186054763"><span class="type">Landscape: </span><span class="phoNum">(918)605-4763</span></a><br />
+					<a href="tel:9182376181"><span class="type">Irrigation: </span><span class="phoNum">(918)237-6181</span></a>
 				</div>
 			</header>
 			
+			<nav class="nav-outer-cont-desk">
+				<ul  class="nav-list">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="services.html">Services</a>
+						<ul class="services_list">
+							<li><a href="landscape-design.html">Landscape Design</a></li>
+							<li><a href="irrigation-repair.html">Irrigation Repair</a></li>
+							<li><a href="lighting.html">Lighting</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Our Work</a></li>
+					<li><a href="about.html">Who Are We</a></li>
+				</ul>
+			</nav>
+			
 			<section class="carousel_section">
+			
+				<div class="social-icon_cont">
+					<a href="mailto:erin@fiftyshadesofgreenok.com" target="_blank">
+						<svg class="email-icon">
+							<use xlink:href="#email-icon"></use>
+						</svg>
+					</a>
+					<a href="https://www.facebook.com/Fifty-Shades-of-Green-422370147946617/?fref=ts"  target="_blank">
+						<svg class="fb-icon">
+							<use xlink:href="#fb-icon"></use>
+						</svg>
+					</a>
+				</div>
+				
+				
 				<hr class="horizontal_row" size='20'/>
+				
+				
 				<div class="carousel single-item">
 				
 				  <div class="carousel_cont carousel_cont_1">
-					<img src="assets/img/carousel-pic1.jpg" />
+					<img src="assets/img/van.jpg" />
 					<div class="carousel_info_box">
 						<h3 class="info_box_title">Information Title</h3>
 						<p class="info_box_paragraph">This is where you can write some stuff about the company of something that the company offers. You could make it a link that lead to somewhere else.</p>
@@ -171,22 +218,39 @@
 					<ul class="services_list">
 						<li class="service_item">
 							<a href="#">
-								<img src="assets/img/lawncare.jpg" alt="Lawncare"/>
+									<img src="assets/img/landscape-design.jpg" alt="Flower Bed Landscape"/>
+									<div class="service_title_container">Landscape Design</div>
+									<div class="service_overlay">
+										<div class="service_overlay_content">
+											<ul>
+												<li>New Install</li>
+												<li>Revitalize existing</li>
+												<li>Clean-up</li>
+											</ul>
+										</div>
+									</div>
 							</a>
 						</li>
 						<li class="service_item">
 							<a href="#">
-								<img src="assets/img/sodinstallation.jpg" alt="Sod Installation"/>
+								<img src="assets/img/irrigation-repair.jpg" alt="Irrigation Repair"/>
+								<div class="service_title_container">Irrigation Repair</div>
+								<div class="service_overlay">
+									<div class="service_overlay_content">
+										<p>We offer the best prices gauranteed!</p>
+									</div>
+								</div>
 							</a>
 						</li>
 						<li class="service_item">
 							<a href="#">
-								<img src="assets/img/tree-shrubbery.jpg" alt="Tree and Shrubbery"/>
-							</a>
-						</li>
-						<li class="service_item">
-							<a href="#">
-								<img src="assets/img/programs.jpg" alt="Programs"/>
+								<img src="assets/img/lighting.jpg" alt="Landscape Lighting"/>
+								<div class="service_title_container">Lighting</div>	
+								<div class="service_overlay">
+										<div class="service_overlay_content">
+											<p>We offer the best prices gauranteed!</p>
+										</div>
+								</div>
 							</a>
 						</li>
 					</ul>
@@ -194,33 +258,19 @@
 				
 			</section>
 			
-			<section class="services_section">
-				<h3 class="section_title"><span>About</span></h3>
-				
-				<div class="services_cont">
-					
+			<footer class="footer_section">
+			
+				<div class="HomePgReqQuote">
+					<a href="#">Request Quote</a>
 				</div>
 				
-			</section>
-			
-			<section class="services_section">
-				<h3 class="section_title"><span>Gallery</span></h3>
-				
-				<div class="services_cont">
-					
+				<div class="testimonials">
+				  <div>My grass is shorter everytime they come out</div>
+				  <div>The workers are great</div>
+				  <div>Could use more whips</div>
 				</div>
 				
-			</section>
-			
-			<section class="services_section">
-				<h3 class="section_title"><span>Contact</span></h3>
-				
-				<div class="services_cont">
-					
-
-				</div>				
-			</section>
-		
+			</footer>
 		</div> 
 	<script type="text/javascript" src="dist/js/app.min.js"></script>
 	<script type="text/javascript" src="js/carousel.js"></script>

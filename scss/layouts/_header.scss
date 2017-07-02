@@ -1,4 +1,14 @@
+.header_and_nav {
+	position: fixed;
+	z-index: 300;
+	background: $BGColor;
+	transition: all 0.3s;
+}
+
+
+
 header {
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -7,7 +17,7 @@ header {
 		justify-content: center;
 	}
 	.logo {
-		flex-basis: calc(100% - 207px);
+		flex-basis: 45%;
 		margin-top: -13px;
 		margin-bottom: -25px;
 		@include mobile {
@@ -20,23 +30,73 @@ header {
 	img {
 		height: 135px;
 		margin-left: -25px;
+		transition: all 0.3s;
+		
 		@include mobile {
 			width: 100%;
 		}
 	}
 }
+
+
 .contact_info {
+	margin-right: 25px;
+	flex-basis: 50%;
+	align-self: flex-start;
+    margin-top: 5px;
+	text-align: right;
+	
 	@include mobile {
 		flex-basis: 100%;
 		margin-top: -50px;
 	}
+	
+	.type {
+		font-family: 'Cinzel Decorative', cursive;
+		font-size: 13px;
+		color: darken(grey, 30%);
+		font-weight: 100;
+		transition: all 0.3s;
+		
+		&::before {
+			content: url("../assets/svg/FSsymbol.svg");
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			top: 4px;
+			left: -2px;
+			position: relative;
+		}
+	}
+	
+	.phoNum {
+		font: 1em $baseFont;
+		line-height: 0.3em;
+		letter-spacing: 1.5px;
+		color: green;
+		transition: all 0.3s;
+		
+	}
+	
+	.seporater {
+		padding: 0 5px;
+		font-size: 24px;
+		color: grey;
+	}
+	
 	a {
-		display: block;
+		display: inline-block;
+		font-weight: 100;
+		margin-top: -10px;
+		
 		@include mobile {
 			float: right;			
 		}
 	}
 }
+
+
+
 @include mobile {
 	a[href^="tel"] {
 		padding-left: 21px;
@@ -47,3 +107,4 @@ header {
 		
 	}
 }
+

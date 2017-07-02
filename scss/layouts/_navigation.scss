@@ -1,10 +1,69 @@
-.nav-outer-cont {
+/********************************Desktop Navigation*********************************/
+.nav-outer-cont-desk {
+	.nav-list {
+		display: flex;
+		margin: 0;
+		justify-content: center;
+		
+		li {
+			padding: 0 37px;
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			margin: 0 18px;
+			transition: all .2s;
+			
+			&:hover {
+				background:  lighten(#eaeaea, 10%);
+			}
+		}
+		
+		a {
+			transition: all 0.8s;
+		}
+	}
+	.services_list {
+		display: none;
+		background: lighten(#eaeaea, 10%);
+		padding: 0 9px 9px 9px;
+		box-shadow: 6px 7px 13px #888;
+		position: absolute;
+		z-index: 100;
+		left: 386px;
+		
+		li {
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding: 9px 2px;
+			border-bottom: 1px solid rgba(0,128,0,0.2);
+			
+			a {
+				transition: all 0.3s;
+				
+				&:hover {
+					color: rgba(0,128,0,1);
+				}
+			}
+		}
+		li:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+.nav-list a {
+	color: grey;
+}
+/********************************Mobile Navigation*********************************/
+.nav-outer-cont-mobile {
 	width: 225px;
 	position: fixed;
 	height: 100%;
 	background: linear-gradient(to left, (rgba(179,179,179,0.75)) 0, #ffffff 15px, #ffffff 100%);
 	transition: margin-left .5s;
 	z-index: 100;
+	display: none;
 	@include tablet {
 		background: white;
 		margin-left: -225px;
@@ -103,4 +162,48 @@ ul.submenu {
 } 
 .active {
 	border-left: 4px solid green;
+}
+
+/*************************SHRINK HEADER CLASSES*******************************/
+.shrink_header_and_nav {
+	background: darken($BGColor, 50%);
+}
+
+ul.shrink_nav_list {
+	
+	a {
+		font-size: 15px;
+		color: white;
+		
+		&:hover {
+			color: red;
+		}
+	}
+}
+	
+.services_list_shrink_adjustment {
+	left: 405px !important;
+	
+	.nav-list {		
+		li a {
+			color: grey !important;
+		}
+	}
+}
+
+.shrink_logo img {
+	height: 100px;
+}
+
+.shrink_contact_info {
+	
+	.type {
+		color: white;
+		font-size: 11px;
+	}
+	
+	.phoNum {
+		background: rgba(255,255,255,0.6);
+		border-radius: 3px;
+	}
 }

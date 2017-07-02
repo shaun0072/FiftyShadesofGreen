@@ -1,0 +1,220 @@
+/************************REQUEST A QUOTE SECTION******************************/
+.homePgReqQuote {
+	display: flex;
+	height: 250px;
+	background: rgba(98,125,77,1);
+	background: radial-gradient(ellipse at center, rgba(202,216,192,1) 0%, rgba(61,117,16,1) 100%);
+	margin-top: 185px;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 74px -12px rgba(0,0,0,0.75);
+	
+	
+	.reqQuoteLink{
+		text-transform:  uppercase;
+		font-size: 42px;
+		letter-spacing: 1.4px;
+		text-align: center;
+		padding: 14px 20px;
+		color: white;
+		border: 3px solid #b8caa9;
+		border-radius: 0px;
+		background: #6e8d57;
+		transition: all .2s;
+		font-weight: 100;
+		
+		.email2-icon {
+		margin-bottom: -6px;
+		margin-right: -5px;
+		width: 51px;
+		height: 39px;
+		fill: white;
+		}
+		
+		&:hover {
+			background: rgba(98,125,77,1);
+			transition: all .2s;
+		}
+	}
+}
+
+
+
+/************************TESTIMONIALS SECTION******************************/
+.testimonials {
+	margin-top: 190px;
+	height: 500px;
+	background: linear-gradient(rgba(90, 92, 94, 0.6), rgba(90, 92, 94, 0.9)), url("../assets/img/quote-picture.jpg") no-repeat center;
+	background-size: cover;
+	position: relative;
+	
+	.slick-list, 
+	.slick-slider,
+	.slick-track {
+		height: 100%;
+	}
+	
+	.testimony_outer {
+		height: 100%;
+		width: 100%;
+
+		.testimony-inner {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
+		
+		.opening_quote_container,
+		.closing_quote_container {
+			width: 7%;
+			opacity: 0.4;
+		}
+		.opening_quote_container{
+			margin-right: 75%;
+		}
+		.closing_quote_container {
+			transform: rotate(180deg);
+			margin-left: 75%;
+		}
+		
+		.testimony {
+		margin: 0;
+		text-align: center;
+		color: white;
+		font-family: 'Tangerine', cursive;
+		font-size: 41px;
+		letter-spacing: 4px;
+		flex-basis: 100%;
+		padding: 0 20%;
+		}
+		
+		.author {
+			color: rgb(227, 190, 66);
+			font-family: $baseFont;
+			flex-basis: 100%;
+			margin: 0;
+			padding: 0;
+			font-weight: bold;
+			font-size: 22px;
+			letter-spacing: 1px;
+			text-align: center;
+			padding: 17px 0 0 108px;
+		}
+		
+		.location {
+			color: white;
+			opacity: 0.8;
+			flex-basis: 100%;
+			margin-top: -5px;
+			padding: 0;
+			font-weight: 100;
+			text-align: center;
+			padding-left: 108px;
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+/************************LOGO SECTION******************************/
+
+.footer-logo{
+	margin: 100px auto;
+	width: 20%;
+}
+
+/************************CONTACT SECTION******************************/
+
+footer hr {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.homepg_contact {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+	
+	div:first-of-type {
+		border-right: 1px solid grey;
+	}
+}
+
+.call, .mail {
+	margin: 50px 0;
+    padding: 46px 0;
+	flex-basis: 50%;
+	padding-left: 5%;
+	
+	h5 {
+		color: green;
+		font-family: $baseFont;
+		font-size: 36px;
+		margin: 0;
+		padding: 0;
+		letter-spacing: 1.8px;
+		font-weight: 100;
+	}
+	
+	.phone-icon, .email2-icon {
+		width: 40px;
+		height: 31px;
+		fill: green;
+		margin-bottom: -4px;
+		margin-right: -1px;
+	}
+	.email2-icon {
+		margin-bottom: -5px;
+		margin-right: -5px;
+	}
+	
+	span {
+		color: grey;
+		font-size: 21px;
+		letter-spacing: 2px;
+	}
+	
+	a {
+		color: grey;
+		font-size: 21px;
+		letter-spacing: 2px;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+/************************SOCIAL ICONS SECTION******************************/
+
+.footer-social-icons {
+	margin-top: 20px;
+	text-align: center;
+	
+	.email-icon, .fb-icon {
+		width: 25px;
+		height: 25px;
+		fill: $softGrey;
+	}
+	
+	.fb-icon {
+		width: 21px;
+		height: 21px;
+		margin: 0 7px;
+	}
+}
+/************************COPYRIGHT SECTION******************************/
+.copyright_section {
+	margin: 30px 0 0;
+	background: lighten($softGrey, 25%);
+	
+	.copyright {
+		padding: 30px 0;
+		font-size: 13px;
+		margin-bottom: 0;
+	}
+}

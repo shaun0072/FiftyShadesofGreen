@@ -16,11 +16,11 @@ ul.submenu {
 /********************HEADER************************/
 .contact_info {
 	a {
-		font: 1.6em $baseFont;
-		line-height: 1.4em;
-		letter-spacing: 1.8px;
+		font: 1.4em $baseFont;
+		line-height: 0.3em;
+		letter-spacing: 1.5px;
 		color: green;
-		font-weight: 200;
+		
 		@include mobile {
 			font-size: 1em;
 			line-height: 1em;

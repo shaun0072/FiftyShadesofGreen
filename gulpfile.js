@@ -19,6 +19,7 @@ gulp.task("concatScripts", function() {
 		'js/jquery-migrate-1.4.1.min.js',
 		'js/nav-slidedown.js',
 		'js/nav-show-hide.js',
+		'js/animations.js',
 		'slick-1.6.0/slick/slick.js',
 		'js/carousel.js'])
     .pipe(maps.init())
