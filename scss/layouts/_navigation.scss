@@ -11,7 +11,7 @@
 			text-transform: uppercase;
 			letter-spacing: 3px;
 			margin: 0 18px;
-			transition: all .2s;
+			transition: all .8s ease;
 			
 			&:hover {
 				background:  lighten(#eaeaea, 10%);
@@ -19,7 +19,7 @@
 		}
 		
 		a {
-			transition: all 0.8s;
+			transition: all 0.8s ease;
 		}
 	}
 	.services_list {
@@ -39,7 +39,7 @@
 			border-bottom: 1px solid rgba(0,128,0,0.2);
 			
 			a {
-				transition: all 0.3s;
+				transition: all 0.3s ease;
 				
 				&:hover {
 					color: rgba(0,128,0,1);
@@ -61,7 +61,7 @@
 	position: fixed;
 	height: 100%;
 	background: linear-gradient(to left, (rgba(179,179,179,0.75)) 0, #ffffff 15px, #ffffff 100%);
-	transition: margin-left .5s;
+	transition: margin-left .5s ease;
 	z-index: 100;
 	display: none;
 	@include tablet {
@@ -125,7 +125,7 @@
 		-moz-transform: rotate(270deg);
 		transform: rotate(180deg);
 		-webkit-transition: -webkit-transform .5s;
-		transition: transform .5s;
+		transition: transform .5s ease;
 		transform-origin: 50% 50%;
 	}
 	.home-icon svg {
@@ -171,8 +171,11 @@ ul.submenu {
 
 ul.shrink_nav_list {
 	
+	li {
+		transform: scale(0.8);
+	}
+	
 	a {
-		font-size: 15px;
 		color: white;
 		
 		&:hover {

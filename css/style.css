@@ -534,11 +534,11 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0 18px;
-    transition: all .2s; }
+    transition: all .8s ease; }
     .nav-outer-cont-desk .nav-list li:hover {
       background: white; }
   .nav-outer-cont-desk .nav-list a {
-    transition: all 0.8s; }
+    transition: all 0.8s ease; }
 
 .nav-outer-cont-desk .services_list {
   display: none;
@@ -555,7 +555,7 @@ header {
     padding: 9px 2px;
     border-bottom: 1px solid rgba(0, 128, 0, 0.2); }
     .nav-outer-cont-desk .services_list li a {
-      transition: all 0.3s; }
+      transition: all 0.3s ease; }
       .nav-outer-cont-desk .services_list li a:hover {
         color: green; }
   .nav-outer-cont-desk .services_list li:last-child {
@@ -570,7 +570,7 @@ header {
   position: fixed;
   height: 100%;
   background: linear-gradient(to left, rgba(179, 179, 179, 0.75) 0, #ffffff 15px, #ffffff 100%);
-  transition: margin-left .5s;
+  transition: margin-left .5s ease;
   z-index: 100;
   display: none; }
   @media (max-width: 768px) {
@@ -630,7 +630,7 @@ header {
     -moz-transform: rotate(270deg);
     transform: rotate(180deg);
     -webkit-transition: -webkit-transform .5s;
-    transition: transform .5s;
+    transition: transform .5s ease;
     transform-origin: 50% 50%; }
   .tab-cont .home-icon svg {
     transform: rotate(0);
@@ -664,8 +664,10 @@ ul.submenu {
 .shrink_header_and_nav {
   background: #6b6b6b; }
 
+ul.shrink_nav_list li {
+  transform: scale(0.8); }
+
 ul.shrink_nav_list a {
-  font-size: 15px;
   color: white; }
   ul.shrink_nav_list a:hover {
     color: red; }
@@ -800,7 +802,7 @@ ul.shrink_nav_list a {
   display: none;
   height: 45px;
   width: 45px;
-  top: 167px; }
+  top: 241px; }
 
 .slick-next {
   right: 2px; }
@@ -1260,7 +1262,7 @@ footer hr {
 .quoteForm_section {
   padding: 0 200px 0; }
   .quoteForm_section h1.get_a_quote {
-    padding-top: 100px;
+    padding-top: 15px;
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 50px;
