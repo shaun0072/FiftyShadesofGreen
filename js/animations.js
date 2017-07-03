@@ -21,15 +21,16 @@ $('.service_item').on('mouseenter', function() {
 
 /******************Flow Navigation***********************/
 $('.nav-list li').on('mouseenter', function() {
-	$(this).find('.services_list').stop().slideDown("fast");
+	$(this).find('.services_nav_list').stop().slideDown("fast");
 }).on('mouseleave', function() {
-	$(this).find('.services_list').stop().slideUp("fast");
+	$(this).find('.services_nav_list').stop().slideUp("fast");
 })
 
 /******************Phone Input Formatting***********************/
 $("input[name='phone']").keyup(function() {
     $(this).val($(this).val().replace(/^(\d{3})(\d{3})(\d)+$/, "($1)$2-$3"));
 });
+
 /******************Header Scroll Shrink***********************/
 $(function(){
     $('.header_and_nav').data('size','big');
@@ -45,6 +46,7 @@ $(window).scroll(function(){
 			$('.logo').addClass("shrink_logo");
 			$('.contact_info').addClass("shrink_contact_info");
 			$('.header_and_nav').addClass("shrink_header_and_nav");
+			$('.services_nav_list').addClass("services_list_shrink_adjustment");
         }
     }
     else
@@ -56,9 +58,11 @@ $(window).scroll(function(){
 			$('.logo').removeClass("shrink_logo");
 			$('.contact_info').removeClass("shrink_contact_info");
 			$('.header_and_nav').removeClass("shrink_header_and_nav");
+			$('.services_nav_list').removeClass("services_list_shrink_adjustment");
         }  
     }
 });
+
 /******************Content Scroll Fade/Slide In***********************/
 $(window).scroll(function(){
 	if($(document).scrollTop() > 600) {
