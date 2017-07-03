@@ -1,19 +1,19 @@
-img{
-	width:100%;
-	height:auto;
+.img-container1 img{
+	width: 100%;
+	height: auto;
+}
+
+.img-container2 img,
+.img-container3 img {
+	width: 100%;
+	height: 100%;
 }
 
 .img-group{
 	display:flex;
-}
-
-.img-container1{
-	flex: 1.7809;
-}
-.img-container2{
-	flex: 2.2142;
-}
-
-.img-container3{
-	flex: 2.5577;
+	
+	div {
+		flex-basis: 33.33333%;
+		height: 100%;
+	}
 }
