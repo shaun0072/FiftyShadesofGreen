@@ -962,6 +962,23 @@ li.service_item {
     color: #737373;
     text-align: center; }
 
+/* .image1,
+.image2,
+.image3 {
+	content: "";
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+.image1 {
+	background-image: url("../assets/img/landscape-design.jpg");
+}
+.image2 {
+	background-image: url("../assets/img/irrigation-repair.jpg");
+}
+.image3 {
+	background-image: url("../assets/img/lighting.jpg");
+} */
 /************************REQUEST A QUOTE SECTION******************************/
 .homePgReqQuote {
   display: flex;
@@ -1347,5 +1364,21 @@ footer hr {
   height: 100%;
   min-width: initial;
   margin: 0 auto; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.img-group {
+  display: flex; }
+
+.img-container1 {
+  flex: 1.7809; }
+
+.img-container2 {
+  flex: 2.2142; }
+
+.img-container3 {
+  flex: 2.5577; }
 
 /*# sourceMappingURL=style.css.map */
