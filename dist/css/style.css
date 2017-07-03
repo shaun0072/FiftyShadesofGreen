@@ -869,7 +869,7 @@ ul.services_list {
   justify-content: flex-start; }
 
 li.service_item {
-  flex-basis: 33%;
+  flex-basis: 33.333333%;
   position: relative; }
   @media (max-width: 450px) {
     li.service_item {
