@@ -882,11 +882,6 @@ li.service_item {
   li.service_item img {
     transition: box-shadow .2s;
     min-height: 100%; }
-    li.service_item img:hover {
-      box-shadow: 10px 10px 5px grey; }
-      @media (max-width: 450px) {
-        li.service_item img:hover {
-          box-shadow: none; } }
   li.service_item .service_overlay {
     display: none;
     height: 100%;
