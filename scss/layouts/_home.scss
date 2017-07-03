@@ -206,12 +206,6 @@ li.service_item {
 	img {
 		transition: box-shadow .2s;
 		min-height: 100%;
-		&:hover {
-			box-shadow: 10px 10px 5px grey;
-			@include mobile {
-				box-shadow: none;
-			}
-		}
 	}
 	
 	.service_overlay {
