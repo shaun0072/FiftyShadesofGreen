@@ -880,8 +880,7 @@ li.service_item {
     width: 100%;
     height: 100%; }
   li.service_item img {
-    transition: box-shadow .2s;
-    min-height: 100%; }
+    transition: box-shadow .2s; }
   li.service_item .service_overlay {
     display: none;
     height: 100%;
