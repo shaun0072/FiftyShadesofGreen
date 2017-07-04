@@ -1,10 +1,10 @@
 /************************HOMEPAGE CAROUSEL******************************/
-$('.single-item').slick({
+/* $('.single-item').slick({
 	dots          :  true,
 	autoplay      :  false
 });
 
-$('button.slick-arrow').removeAttr('style');
+$('button.slick-arrow').removeAttr('style'); */
 /************************TESTIMONIALS CAROUSEL******************************/
 $('.testimonials').slick({
 	dots          :  false,

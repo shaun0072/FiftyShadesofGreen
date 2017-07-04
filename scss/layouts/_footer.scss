@@ -9,8 +9,13 @@
 	align-items: center;
 	box-shadow: 0px 0px 74px -12px rgba(0,0,0,0.75);
 	
+	@include tablet {
+		height: 190px;
+		margin-top: 75px;
+	}
 	
-	.reqQuoteLink{
+	
+	.reqQuoteLink {
 		text-transform:  uppercase;
 		font-size: 42px;
 		letter-spacing: 1.4px;
@@ -23,12 +28,21 @@
 		transition: all .2s;
 		font-weight: 100;
 		
+		@include tablet {
+			font-size: 25px;
+			letter-spacing: 1.2px;
+		}
+		
 		.email2-icon {
-		margin-bottom: -6px;
-		margin-right: -5px;
-		width: 51px;
-		height: 39px;
-		fill: white;
+			margin-bottom: -6px;
+			margin-right: -5px;
+			width: 51px;
+			height: 39px;
+			fill: white;
+			
+			@include tablet {
+				height: 29px;
+			}
 		}
 		
 		&:hover {
@@ -47,6 +61,11 @@
 	background: linear-gradient(rgba(90, 92, 94, 0.6), rgba(90, 92, 94, 0.9)), url("../assets/img/quote-picture.jpg") no-repeat center;
 	background-size: cover;
 	position: relative;
+	
+	@include tablet {
+		margin-top: 110px;
+		height: 315px;
+	}
 	
 	.slick-list, 
 	.slick-slider,
@@ -75,21 +94,35 @@
 		}
 		.opening_quote_container{
 			margin-right: 75%;
+			
+			@include tablet {
+				margin-right: 90%;
+			}
 		}
 		.closing_quote_container {
 			transform: rotate(180deg);
 			margin-left: 75%;
+			
+			@include tablet {
+				margin-left: 85%;
+			}
 		}
 		
 		.testimony {
-		margin: 0;
-		text-align: center;
-		color: white;
-		font-family: 'Tangerine', cursive;
-		font-size: 41px;
-		letter-spacing: 4px;
-		flex-basis: 100%;
-		padding: 0 20%;
+			margin: 0;
+			text-align: center;
+			color: white;
+			font-family: 'Tangerine', cursive;
+			font-size: 41px;
+			letter-spacing: 4px;
+			flex-basis: 100%;
+			padding: 0 20%;
+			
+			@include tablet {
+				font-size: 35px;
+				letter-spacing: 2px;
+				padding: 0 8%;
+			}
 		}
 		
 		.author {
@@ -103,6 +136,10 @@
 			letter-spacing: 1px;
 			text-align: center;
 			padding: 17px 0 0 108px;
+			
+			@include tablet {
+				font-size: 18px;
+			}
 		}
 		
 		.location {
@@ -125,6 +162,11 @@
 .footer-logo{
 	margin: 100px auto;
 	width: 20%;
+	
+	@include tablet {
+		width: 35%;
+		margin: 52px auto;
+	}
 }
 
 /************************CONTACT SECTION******************************/
@@ -159,6 +201,10 @@ footer hr {
 		padding: 0;
 		letter-spacing: 1.8px;
 		font-weight: 100;
+		
+		@include tablet {
+			font-size: 25px;
+		}
 	}
 	
 	.phone-icon, .email2-icon {
@@ -167,22 +213,42 @@ footer hr {
 		fill: green;
 		margin-bottom: -4px;
 		margin-right: -1px;
+		
+		@include tablet {
+			width: 22px;
+			height: 27px;
+			margin-right: 2px;
+		}
 	}
 	.email2-icon {
 		margin-bottom: -5px;
 		margin-right: -5px;
+		
+		@include tablet {
+			margin-right: 1px;
+		}
 	}
 	
 	span {
 		color: grey;
 		font-size: 21px;
 		letter-spacing: 2px;
+		
+		@include tablet {
+			font-size: 17px;
+			letter-spacing: 1px
+		}
 	}
 	
 	a {
 		color: grey;
 		font-size: 21px;
 		letter-spacing: 2px;
+		
+		@include tablet {
+			font-size: 17px;
+			color: black;
+		}
 		
 		&:hover {
 			text-decoration: underline;

@@ -17,9 +17,16 @@ header {
 		justify-content: center;
 	}
 	.logo {
-		flex-basis: 45%;
+		flex-basis: 25%;
 		margin-top: -13px;
 		margin-bottom: -25px;
+		padding-left: 11px;
+		
+		@include tablet {
+			flex-basis: 29%;
+			margin-top: -33px;
+		}
+		
 		@include mobile {
 			flex-basis: 100%;
 			margin-bottom: 0;
@@ -40,15 +47,31 @@ header {
 
 
 .contact_info {
-	margin-right: 25px;
-	flex-basis: 50%;
+	margin-right: 0;
+	padding-right: 21px;
+	flex-basis: 75%;
 	align-self: flex-start;
     margin-top: 5px;
 	text-align: right;
 	
+	@include tablet {
+		margin-right: 27px;
+		flex-basis: 66%;
+	}
+	
 	@include mobile {
 		flex-basis: 100%;
 		margin-top: -50px;
+	}
+	
+	a {
+		display: inline-block;
+		font-weight: 100;
+		margin-top: -10px;
+		
+		@include mobile {
+			float: right;			
+		}
 	}
 	
 	.type {
@@ -58,6 +81,10 @@ header {
 		font-weight: 100;
 		transition: all 0.3s;
 		
+		@include tablet {
+			font-size: 10px;
+		}
+		
 		&::before {
 			content: url("../assets/svg/FSsymbol.svg");
 			width: 20px;
@@ -66,6 +93,12 @@ header {
 			top: 4px;
 			left: -2px;
 			position: relative;
+			
+			@include tablet {
+				width: 15px;
+				height: 15px;
+				top: 5px
+			}
 		}
 	}
 	
@@ -76,21 +109,20 @@ header {
 		color: green;
 		transition: all 0.3s;
 		
+		@include tablet {
+			font-size: 18px;
+		}
+		
 	}
 	
 	.seporater {
 		padding: 0 5px;
 		font-size: 24px;
 		color: grey;
-	}
-	
-	a {
-		display: inline-block;
-		font-weight: 100;
-		margin-top: -10px;
 		
-		@include mobile {
-			float: right;			
+		@include tablet {
+			padding: 0 2px;
+			font-size: 16px;
 		}
 	}
 }

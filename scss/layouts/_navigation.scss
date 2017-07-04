@@ -5,6 +5,10 @@
 		margin: 0;
 		justify-content: center;
 		
+		@include tablet {
+			
+		}
+		
 		li {
 			padding: 0 37px;
 			font-size: 18px;
@@ -18,6 +22,12 @@
 			&:hover {
 				background:  lighten(#eaeaea, 10%);
 			}
+			
+			@include tablet {
+				padding: 0 23px;
+				font-size: 15px;
+			}	
+			
 		}
 		
 		a {
@@ -175,10 +185,13 @@ ul.submenu {
 ul.shrink_nav_list {
 	
 	li {
-		transform: scale(0.8);
+		margin: 0 10px !important;
 	}
 	
 	a {
+		transform: scale(0.8);
+		display: inline-block;
+		-webkit-font-smoothing: antialiased;
 		color: white;
 		
 		&:hover {

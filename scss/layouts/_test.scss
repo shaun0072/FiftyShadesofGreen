@@ -1,43 +1,4 @@
-/* .img-container1 img{
-	width: 100%;
-	height: auto;
+#container {
+	height: 400px;
+	overflow: hidden;
 }
-
-.img-container2 img,
-.img-container3 img {
-	width: 100%;
-	height: auto;
-}
-
-.img-group{
-	display:flex;
-	
-	div {
-		flex-basis: 33.33333%;
-		height: 100%;
-	}
-} */
-
-.img-group {
-	display: flex;
-	
-	img {
-		display: block;
-	}
-}
-.img-container1,
-.img-container2,
-.img-container3 {
-	flex-basis: 33.33333%;
-	position: relative;
-}
-
-/* .overlay {
-	background: rgba(0,0,0,0.5);
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	
-	
-} */

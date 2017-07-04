@@ -12,12 +12,20 @@
 		padding: 0 0 50px;
 		font-family: 'Lato', sans-serif;
 		letter-spacing: 7px;
+		
+		@include tablet {
+			font-size: 35px;
+		}
 	}
 	
 	hr {
 		width: 90%;
 		margin: 105px auto;
 		opacity: 0.7;
+		
+		@include tablet {
+			margin: 80px auto;
+		}
 	}
 	
 	.outer {
@@ -34,6 +42,11 @@
 		flex-direction: row-reverse;
 		margin-top: 95px;
 		padding: 0 80px;
+		
+		@include tablet {
+			margin-top: 20px;
+			padding: 0 15px;
+		}
 		
 		.inner {
 			flex-basis: 55%;
@@ -70,6 +83,10 @@
 			margin: 0;
 			letter-spacing: 3px;
 			padding: 0 21px;	
+			
+			@include tablet {
+				font-size: 27px;
+			}
 		}
 		
 		ul.list {
@@ -78,11 +95,20 @@
 			padding: 50px 0 0 20px;
 			margin: 0;
 			
+			@include tablet {
+				padding: 13px 0 0 20px;
+			}
+			
 			li {
 				font-size: 22px;
 				font-family: 'Lato', sans-serif;
 				font-weight: bold;
 				margin: 25px 0;
+				
+				@include tablet {
+					margin: 15px 0;
+					font-size: 15px;
+				}
 			}
 		}
 	}
@@ -134,6 +160,10 @@
 		font-family: 'Lato', sans-serif;
 		font-weight: bold;
 		color: grey;
+		
+		@include tablet {
+			font-size: 38px;
+		}
 	}
 	
 	 .inner ul.about_content_list {
@@ -145,11 +175,19 @@
 	.outer {
 		
 		.inner {
-			flex-basis: 70%
+			flex-basis: 70%;
+			
+			@include tablet {
+				flex-basis: 60%;
+			}
 		}
 		
 		.about_pic {
 			flex-basis: 30%;
+			
+			@include tablet {
+				flex-basis: 40%;
+			}
 			
 			img {
 				box-shadow: none;

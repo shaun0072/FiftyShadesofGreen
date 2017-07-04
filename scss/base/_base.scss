@@ -17,4 +17,8 @@ a {
 }
 section:first-of-type {
 	padding-top: 155px;
+	
+	@include tablet {
+		padding-top: 115px;
+	}
 }
