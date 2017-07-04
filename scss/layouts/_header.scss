@@ -123,6 +123,14 @@ header {
 		}
 	}
 	
+	.break {
+		display: none;
+		
+		@include mobile {
+			display: block;
+		}
+	}
+	
 	.seporater {
 		padding: 0 5px;
 		font-size: 24px;

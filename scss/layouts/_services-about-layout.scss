@@ -16,6 +16,12 @@
 		@include tablet {
 			font-size: 35px;
 		}
+		
+		@include mobile {
+			font-size: 26px;
+			letter-spacing: 1px;
+			padding: 0 0 5px;
+		}
 	}
 	
 	hr {
@@ -25,6 +31,10 @@
 		
 		@include tablet {
 			margin: 80px auto;
+		}
+		
+		@include mobile {
+			margin: 40px auto;
 		}
 	}
 	
@@ -42,6 +52,11 @@
 		flex-direction: row-reverse;
 		margin-top: 95px;
 		padding: 0 80px;
+		flex-wrap: wrap;
+		
+		@include mobile {
+			flex-direction: row;
+		}
 		
 		@include tablet {
 			margin-top: 20px;
@@ -52,10 +67,19 @@
 			flex-basis: 55%;
 			opacity: 1;
 			margin: 0;
+			
+			@include mobile {
+				flex-basis: 100%;
+				padding: 0;
+			}
 		}
 		
 		.service_pic{
 			flex-basis: 45%;
+			
+			@include mobile {
+				flex-basis: 100%
+			}
 			
 			img {
 				box-shadow: 10px 10px 110px -22px rgba(0,0,0,0.75);
@@ -86,6 +110,11 @@
 			
 			@include tablet {
 				font-size: 27px;
+			}
+			
+			@include mobile {
+				font-size: 22px;
+				text-align: center;
 			}
 		}
 		

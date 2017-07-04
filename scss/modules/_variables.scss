@@ -25,7 +25,7 @@ $specialFont1  : 'Inconsolata', monospace;
 
 /*********************Media Queries*********************/
 $tablet-width : 850px;
-$mobile-width : 450px;
+$mobile-width : 750px;
 
 @mixin tablet {
 	@media (max-width: #{$tablet-width}) {
