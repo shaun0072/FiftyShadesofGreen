@@ -54,13 +54,13 @@
 		padding: 0 80px;
 		flex-wrap: wrap;
 		
-		@include mobile {
-			flex-direction: row;
-		}
-		
 		@include tablet {
 			margin-top: 20px;
 			padding: 0 15px;
+		}
+		
+		@include mobile {
+			flex-direction: row;
 		}
 		
 		.inner {
@@ -193,6 +193,10 @@
 		@include tablet {
 			font-size: 38px;
 		}
+		
+		@include mobile {
+			font-size: 28px;
+		}
 	}
 	
 	 .inner ul.about_content_list {
@@ -209,6 +213,11 @@
 			@include tablet {
 				flex-basis: 60%;
 			}
+			
+			@include mobile {
+				flex-basis: 100%;
+				order: 2;
+			}
 		}
 		
 		.about_pic {
@@ -216,6 +225,11 @@
 			
 			@include tablet {
 				flex-basis: 40%;
+			}
+			
+			@include mobile {
+				flex-basis: 100%;
+				order: 1;
 			}
 			
 			img {
@@ -227,6 +241,10 @@
 				margin-left: auto;
 				margin-right: auto;
 				display: block;
+				
+				@include mobile {
+					height: 250px;
+				}
 			}
 		}
 	}

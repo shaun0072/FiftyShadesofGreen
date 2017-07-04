@@ -20,5 +20,12 @@
 			font-size: 20px;
 			line-height: 28px;
 		}
+		
+		@include mobile {
+			font-size: 15px;
+		line-height: 17px;
+		text-align: center;
+		color: black;
+		}
 	}
 }
