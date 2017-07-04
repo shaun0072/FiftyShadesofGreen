@@ -5,8 +5,8 @@
 		margin: 0;
 		justify-content: center;
 		
-		@include tablet {
-			
+		@include mobile {
+			display: none;
 		}
 		
 		li {
@@ -68,6 +68,7 @@
 .nav-list a {
 	color: grey;
 }
+
 /********************************Mobile Navigation*********************************/
 .nav-outer-cont-mobile {
 	width: 225px;
@@ -75,13 +76,14 @@
 	height: 100%;
 	background: linear-gradient(to left, (rgba(179,179,179,0.75)) 0, #ffffff 15px, #ffffff 100%);
 	transition: margin-left .5s ease;
-	z-index: 100;
+	z-index: 1000;
 	display: none;
-	@include tablet {
-		background: white;
-		margin-left: -225px;
+	
+	@include mobile {
+		display: block;
 	}
 }
+
 .nav_toggle_btn { 
     position: absolute;
 	background: green;
@@ -89,6 +91,11 @@
     top: 135px;
     left: 226px;
 	cursor: pointer;
+	
+	@include mobile {
+		top: 86px;
+	}
+	
 	.arrow {
 		display: inline-block;
 		padding: 1px 4px;		
@@ -96,25 +103,31 @@
 		font-size: 2em;
 		border-radius: 3px 7px 7px 3px;
 		transition: transform 1.3s;
+		
 		@include tablet {
 			padding: 0 8px;
 			transform: rotate(180deg);
 		}
+		
 		@include mobile {
 			font-size: 1.6em;
 			transition: none;
 		}
 	}
 }
+
 .nav-inner-cont {
 	margin-top: 150px;
+	
 	@include mobile {
 		margin-top: 50px;
 	}
 }
+
 .services-cont {
 	margin-top: 54px;
 }
+
 .tab-cont {
 	background: $accentColor;
 	padding: 2.5px 0 2.5px 20px;
@@ -122,16 +135,20 @@
 	opacity: .42;
 	display: flex;
 	align-items: center;
+	
 	.tab-name {
 		flex-basis: 82%;
+		
 		a {
 			color: inherit;
 		}
+		
 	}
 	.submenu-icon {
 		flex-basis: 18%;
 		cursor: pointer;
 	}
+	
 	svg {
 		fill: white;
 		-webkit-transform: rotate(180deg);
@@ -141,13 +158,16 @@
 		transition: transform .5s ease;
 		transform-origin: 50% 50%;
 	}
+	
 	.home-icon svg {
 		transform: rotate(0);
 		fill: white;
 		margin-top: 4px;
 	}
 }
+
 nav {
+	
 	.submenu-icon,
 	svg,
 	#submenu-arrow {
@@ -156,17 +176,21 @@ nav {
 		width: 22px;
 	}
 }
+
 ul.submenu {
 	display: none;
+	
 	li {
 		border-top: 1px dashed $softGrey;
 		:hover {
 			color: black;
 		}
 	}
+	
 	li:first-of-type {
 		border-top: none;
 	}
+	
 	a {
 		display: inline-block;
 		padding: 1px 5px;
@@ -220,14 +244,31 @@ ul.shrink_nav_list {
 }
 
 .shrink_contact_info {
+	@include mobile {
+		padding-top: 14px;
+	}
 	
 	.type {
 		color: white;
 		font-size: 11px;
+		
+		@include mobile {
+			font-size: 9px;
+		}
 	}
 	
 	.phoNum {
 		background: rgba(255,255,255,0.6);
 		border-radius: 3px;
+		
+		@include mobile {
+			letter-spacing: 3px;
+		}
+	}
+	
+	.p2 {
+		@include mobile {
+			letter-spacing: 3.5px;
+		}
 	}
 }

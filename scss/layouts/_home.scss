@@ -16,12 +16,14 @@
 }
 .logo img {
 	min-width: 10%;
+	
+	@include mobile {
+		max-width: 60%;
+	}
 }
 /************************CAROUSEL******************************/
 .carousel_section {
-	@include mobile {
-		display: none;
-	}
+	padding-top: 147px;
 }
 .social-icon_cont {
 	display: flex;
@@ -73,6 +75,8 @@
 	width: 60%;
 	max-width: 450px;
 	z-index: 100;
+	display: none;
+	
 	.info_box_title {
 		margin: 0;
 	}
@@ -156,6 +160,10 @@
 /************************SERVICES SECTION******************************/
 .services_section {
 	margin-top: 110px;
+	
+	@include mobile {
+		margin-top: 0;
+	}
 
 	.section_title {
 		border-top: 1px solid #ccc;
@@ -171,8 +179,9 @@
 		}
 		
 		@include mobile {
-			margin-bottom: 15px;
+			font-size: 24px;
 		}
+		
 		span {
 			display: block;
 			float: left;
@@ -182,9 +191,10 @@
 			font-weight: bold;
 			margin-left: 25px;
 			margin-top: -16px;
+			
 			@include mobile {
 				padding: 0 7px;
-				margin: -9px 0 0 calc(50% - 52px);
+				margin: -15px 0 0 50px;
 			}
 		}
 	}
@@ -210,8 +220,8 @@ li.service_item {
 	transform: translateZ(0);
 	
 	@include mobile {
-		flex-basis: 50%;
-		padding: 5px;
+		flex-basis: 100%;
+		padding: 0;
 	}
 	
 	a {
@@ -324,6 +334,10 @@ li.service_item {
 			font-size: 37px;
 			
 		}
+		
+		@include mobile {
+			font-size: 20px;
+		}
 	}
 	
 	p {
@@ -340,6 +354,12 @@ li.service_item {
 			padding: 20px 93px;
 			letter-spacing: 1px;
 			font-size: 22px;
+		}
+		
+		@include mobile {
+			padding: 0px 13px;
+			letter-spacing: 0.5px;
+			font-size: 13px;
 		}
 	}
 }
