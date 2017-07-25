@@ -422,13 +422,13 @@ ul.submenu a {
   color: white;
   font-family: "Hind", sans-serif; }
   .carousel_info_box .info_box_title {
-    font-size: 1.6em;
+    font-size: 2.0em;
     letter-spacing: 1.2px;
     font-weight: 600; }
   .carousel_info_box .info_box_paragraph {
-    font-size: .9em;
+    font-size: 1.1em;
     line-height: 1.15em;
-    font-weight: 300; }
+    font-weight: 400; }
 
 .carousel_cont_4 .carousel_info_box input[type="text"] {
   color: black;
@@ -816,19 +816,32 @@ ul.shrink_nav_list a {
       max-height: 320px; } }
 
 .carousel_info_box {
-  background: rgba(0, 0, 0, 0.7);
+  /* 	background: rgba(0,0,0,0.7); */
   padding: 22px 13px;
   position: absolute;
-  bottom: 25px;
-  right: 25px;
+  top: 0;
+  right: 50px;
   width: 60%;
-  max-width: 450px;
-  z-index: 100;
-  display: none; }
+  max-width: 510px;
+  z-index: 100; }
   .carousel_info_box .info_box_title {
-    margin: 0; }
+    margin: 0;
+    color: #FFE761;
+    text-transform: uppercase;
+    font-weight: bold; }
   .carousel_info_box .info_box_paragraph {
     margin: 5px 0; }
+  .carousel_info_box .get_started {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #FFE761;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #FFE761;
+    text-transform: uppercase;
+    background: #426b48;
+    font-weight: bold;
+    margin-top: 8px; }
 
 .carousel_cont_1 .carousel_info_box {
   bottom: 25px;
@@ -975,12 +988,12 @@ li.service_item {
       width: 100%; }
       li.service_item .service_overlay .service_overlay_content p {
         width: 100%;
-        padding: 10px;
         color: white;
         text-align: center;
-        font-size: 20px;
-        letter-spacing: 3px;
-        font-weight: 100; }
+        font-size: 25px;
+        letter-spacing: 2px;
+        font-weight: 100;
+        margin: 5px; }
       li.service_item .service_overlay .service_overlay_content li {
         margin-left: 30px;
         width: 100%;
@@ -1369,7 +1382,7 @@ footer hr {
 
 .about_section .about_main_paragraph {
   width: 90%;
-  text-align: justify;
+  text-align: center;
   margin: 0 auto;
   font-size: 27px;
   font-family: 'Lato', sans-serif;
@@ -1478,7 +1491,6 @@ footer hr {
           text-align: center; } }
     .service_pg_section .inner ul.list {
       flex-basis: 100%;
-      list-style-type: disc;
       padding: 50px 0 0 20px;
       margin: 0; }
       @media (max-width: 850px) {

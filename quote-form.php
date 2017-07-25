@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Shades of Green</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href='https://fonts.googleapis.com/css?family=Hind:700,400,300,500,600' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+		<link rel="stylesheet" href="slick-1.6.0/slick/slick.css" />
+		<link rel="stylesheet" href="slick-1.6.0/slick/slick-theme.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body id="scrollTop">
+		<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">  
+		  <symbol id="submenu-arrow" viewBox="0 0 612 612">
+			<title>submenu-arrow</title>
+			<g>
+				<path d="M306,0C136.992,0,0,136.992,0,306s136.992,306,306,306c168.988,0,306-136.992,306-306S475.008,0,306,0z M306,573.75
+				C158.125,573.75,38.25,453.875,38.25,306C38.25,158.125,158.125,38.25,306,38.25c147.875,0,267.75,119.875,267.75,267.75
+				C573.75,453.875,453.875,573.75,306,573.75z M392.751,142.749c-7.478-7.478-19.584-7.478-27.043,0l-146.44,146.44
+				c-4.59,4.59-6.005,10.863-4.953,16.811c-1.052,5.929,0.382,12.221,4.953,16.811l146.44,146.44c7.479,7.459,19.584,7.459,27.043,0
+				c7.478-7.478,7.478-19.584,0-27.043L256.543,306l136.188-136.189C400.21,162.333,400.21,150.227,392.751,142.749z"/>
+			</g>
+		  </symbol>
+		  <symbol id="home-icon" viewBox="0 0 512 512">
+			<title>home-icon</title>
+			<g transform="translate(0,448)">
+				<path style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:12;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+				d="m 16,256 240,-192 96,72 0,-32 48,0 0,72 96,80 -48,0 0,192 -120,0 0,-160 -96,0 0,160 -168,0 0,-192 z"
+				transform="translate(0,-448)"/>
+			</g>
+		  </symbol>
+		  <symbol id="email-icon" viewBox="0 0 512 512">
+			<title>email</title>
+			<path id="email-3-icon" d="M256.017,273.436L50.847,103.407h410.904L256.017,273.436z M255.983,328.898L50,158.244v250.349h412 V158.653L255.983,328.898z"/>
+		  </symbol>
+		  <symbol id="fb-icon" viewBox="0 0 56.693 56.693">
+			<title>facebook</title>
+			<path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/>
+		  </symbol>
+		   <symbol id="phone-icon"  viewBox="0 0 349.325 349.324">
+			<title>phone-icon</title>
+			<path d="M18.451,33.056C-8.6,73.651-6.972,151.824,42.83,207.313c46.215,51.491,115.158,108.634,115.735,109.101c1.478,1.341,36.774,32.91,88.89,32.91c5.043,0,10.161-0.31,15.214-0.919c56.533-6.83,77.256-43.071,84.579-64.059c3.782-10.801-2.585-24.196-13.914-29.254L266.985,225.6c-3.184-1.411-6.992-2.158-11.015-2.158c-8.2,0-16.432,3.042-21.47,7.937l-20.911,20.262c-3.107,3.011-8.627,5.032-13.746,5.032c-2.188,0-4.118-0.386-5.57-1.122c-14.116-7.079-36.3-21.211-61.857-48.307c-22.681-24.07-33.456-40.568-38.506-50.173c-2.821-5.373,0.127-14.678,4.552-19.096l18.603-18.596c7.734-7.734,11.217-21.962,7.924-32.39L104.07,20.556C100.887,10.453,90.149,0,77.629,0C60.288,0.584,35.942,6.795,18.451,33.056z M78.292,11.842c5.979,0.025,12.688,6.614,14.472,12.279l20.921,66.43c1.976,6.249-0.366,15.8-5.001,20.444l-18.606,18.59c-7.599,7.6-12.093,22.673-6.66,32.989c5.39,10.248,16.765,27.729,40.37,52.783c26.743,28.351,50.196,43.259,65.158,50.77c3.067,1.544,6.846,2.356,10.903,2.356c8.231,0,16.655-3.199,21.978-8.358l20.91-20.256c4.164-4.037,14.062-5.825,19.419-3.453l66.354,29.492c5.058,2.25,9.45,9.075,7.551,14.508c-6.413,18.393-24.663,50.15-74.804,56.214c-4.58,0.553-9.221,0.827-13.802,0.827c-46.996,0-79.704-28.741-81.133-30.011c-0.67-0.554-69.292-57.498-114.676-108.06C7.081,149.737,3.598,76.686,28.302,39.619C43.002,17.562,63.591,12.34,78.292,11.842z"/>
+		  </symbol>
+		  <symbol id="email2-icon"  viewBox="0 0 1000 1000">
+			<title>email2-icon</title>
+			<path d="M989.9,132.1c0.1-7.9-2.7-15.7-8.7-21.7c-6.4-6.4-14.9-9-23.3-8.4H42.1c-8.4-0.6-16.9,2.1-23.3,8.4c-6,6-8.9,13.9-8.7,21.7c0,0.2-0.1,0.3-0.1,0.4v735c0,16.9,13.7,30.6,30.6,30.6h918.8c16.9,0,30.6-13.7,30.6-30.6v-735C990,132.4,989.9,132.2,989.9,132.1z M877.7,163.1L500,490.6L122.3,163.1H877.7z M928.8,806.3c0,16.9-13.7,30.6-30.6,30.6H101.9c-16.9,0-30.6-13.7-30.6-30.6V198.4l405,351.1c0.7,0.9,1,1.9,1.8,2.7c6.1,6.1,14,8.8,22,8.7c7.9,0.2,15.9-2.6,22-8.7c0.8-0.8,1.1-1.8,1.8-2.7l405-351.1V806.3z"/>
+		  </symbol>
+		</svg>		
+		<nav class="nav-outer-cont-mobile">
+			<div class="nav_toggle_btn"><span class="arrow">&lsaquo;</span></div>
+			<div class="nav-inner-cont">
+				<div class="active home-cont">
+					<div class="tab-cont">
+						<div class="tab-name"><a href="index.html">Home</a></div>
+						<div class="home-icon">
+							<a href="index.html">
+								<svg>
+									<use xlink:href="#home-icon"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="services-cont">
+					<div class="tab-cont">
+						<div class="tab-name"><a>Services</a></div>
+						<div class="submenu-icon">
+							<svg>
+								<use xlink:href="#submenu-arrow"></use>
+							</svg>
+						</div>
+					</div>
+					<ul class="submenu services-submenu">
+						<li><a href="landscape_design.html">Landscape</a></li>
+						<li><a href="irrigation_repair.html">Irrigation</a></li>
+						<li><a href="lighting.html">Lighting</a></li>
+					</ul>	
+				</div>		
+				<div class="gallery-cont">
+					<div class="tab-cont">
+						<div class="tab-name"><a href="gallery.html">Gallery</a></div>
+					</div>
+				</div>
+				<div class="about-cont">
+					<div class="tab-cont">
+						<div class="tab-name"><a href="about.html">Who We Are</a></div>
+					</div>
+				</div>
+				<div class="contact-cont">
+					<div class="tab-cont">
+						<div class="tab-name"><a href="#">Contact</a></div>
+						<div class="submenu-icon">
+							<svg>
+								<use xlink:href="#submenu-arrow"></use>
+							</svg>
+						</div>
+					</div>
+					<ul class="submenu contact-submenu">
+						<li><a href="tel:9186054763">Landscape: (918)605-4763</a></li>
+						<li><a href="tel:9082376181">Irrigation: (918)237-6181</a></li>
+						<li><a href="mailto:amy@FiftyShadesofGreenok.com">Email: amy@FiftyShadesofGreenok.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="mainarea">
+		
+			<div class="header_and_nav">
+		
+				<header>
+					<div class="logo">
+						<a href="index.html"><img src="assets/svg/FiftyShadesofGreen.svg" /></a>
+					</div>
+					<div class="contact_info">
+						<a href="tel:9186054763"><span class="type">Landscape: </span><span class="phoNum">(918)605-4763</span></a><span class="seporater"> | </span><br class="break"/>
+						<a href="tel:9182376181"><span class="type">Irrigation: </span><span class="phoNum p2">(918)237-6181</span></a>
+					</div>
+				</header>
+				
+				<nav class="nav-outer-cont-desk">
+					<ul  class="nav-list">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a>Services</a>
+							<ul class="services_nav_list">
+								<li><a href="landscape_design.html">Landscape Design</a></li>
+								<li><a href="irrigation_repair.html">Irrigation Repair</a></li>
+								<li><a href="lighting.html">Lighting</a></li>
+							</ul>
+						</li>
+						<li><a href="gallery.html">Our Work</a></li>
+						<li><a href="about.html">Who We Are</a></li>
+					</ul>
+				</nav>
+			
+			</div>
+			
+			<section class="quoteForm_section">
+		
+				<?php 
+				if (isset($_POST["submitButton"]) && !empty($_POST["submitButton"]))
+				{
+					$to = "gilygob@yahoo.com";
+					$subject = "QUOTE REQUEST FROM WEBSITE";
+					$txt = "Name: ". $_POST['name'] . "\n Email: " . $_POST['email'] . "\n Phone: " . $_POST['phone'] . "\n Address: " . $_POST['address'] . "\n Comment: " . $_POST['comment'] ;
+					$headers = "Reply-To: " . $_POST['email'];
+					
+					mail($to,$subject,$txt,$headers);
+				
+					echo  "<h1>The email has been sent</h1>";
+					
+					echo "<p>Name: " . $_POST['name'] . "</p>";
+					echo "<p><span>Email: </span><span>" .  $_POST['email'] . "</span></p>";
+					echo "<p><span>Phone: </span><span>" .  $_POST['phone'] . "</span></p>";
+					echo "<p><span>Address: </span><span>" .  $_POST['address'] . "</span></p>";
+					echo "<p><span>Comment: </span><span>" .  $_POST['comment'] . "</span></p>";
+					
+				}
+				
+				?>
+				
+				<?php
+					if(!isset($_POST['submitButton'])) 
+					{
+						echo '<h1 class="get_a_quote">Get a Quote</h1>
+						
+								<form class="quoteForm" action="quote-form.php" method="POST">
+									<input type="text" name="name" placeholder="Name">
+									<input type="mail" name="email" placeholder="Email">
+									<input type="tel" name="phone" placeholder="Phone">
+									<input type="text" name="address" placeholder="Address">
+									<textarea rows="4" cols="50" name="comment" placeholder="Comments"></textarea>
+									
+									<input type="submit" value="Submit" name="submitButton">
+								</form>';
+					}
+				
+				?>
+			
+			</section>
+			
+			
+			<footer class="footer_section">
+				
+				<div class="testimonials">
+				  <div class="testimony_outer testimonial-1">
+					<div class="testimony-inner">
+						<div class="opening_quote_container"><img src="assets/img/quotes.png" /></div>
+						<p class="testimony">The gentlemen who did our landscaping and laid the perfect paver patio were professional and courteous. Great company. Would recommend them!</p>
+						<p class="author">Patricia Dainty</p>
+						<p class="location">Tulsa, OK</p>
+						<div class="closing_quote_container"><img src="assets/img/quotes.png" /></div>
+					</div>	
+				  </div>
+				  <div class="testimony_outer testimonial-2">
+					<div class="testimony-inner">
+						<div class="opening_quote_container"><img src="assets/img/quotes.png" /></div>
+						<p class="testimony">Erin and Hayes are fast and professional. Erin came out and completed 3 large areas super fast. Very knowledgeable in their field.</p>
+						<p class="author">Amber Farley</p>
+						<p class="location">Broken Arrow, OK</p>
+						<div class="closing_quote_container"><img src="assets/img/quotes.png" /></div>
+					</div>	
+				  </div>
+				<div class="testimony_outer testimonial-3">
+					<div class="testimony-inner">
+						<div class="opening_quote_container"><img src="assets/img/quotes.png" /></div>
+						<p class="testimony">Just had a small garden put in for now but WOW!! What an outstanding job!! will definitely call them up again to do more landscaping!!! Fast and Efficient!!</p>
+						<p class="author">Makenzie Shinn</p>
+						<p class="location">Broken Arrow, OK</p>
+						<div class="closing_quote_container"><img src="assets/img/quotes.png" /></div>
+					</div>	
+				  </div>
+				</div>
+				
+				<div class="footer-logo">
+					<a href="index.html"><img src="assets/svg/FiftyShadesofGreen.svg" /></a>
+				</div>
+				
+				<hr />
+				
+				<div class="homepg_contact">
+					<div class="call">
+						<h5>
+							<svg class="phone-icon">
+								<use xlink:href="#phone-icon"></use>
+							</svg>
+						Call Now
+						</h5>
+						<span>Landscape: </span><a href="tel:9186054763">918.605-4763</a><br />
+						<span>Irrigation: </span><a href="tel:9182376181">918.237-6181</a>
+					</div>
+					
+					<div class="mail">
+						<h5>
+							<svg class="email2-icon">
+								<use xlink:href="#email2-icon"></use>
+							</svg>
+						Email Us
+						</h5>
+						<a href="mailto:amy@FiftyShadesofGreenok.com">amy@FiftyShadesofGreenok.com</a>
+					</div>
+				</div>
+				<hr />
+				
+				<div class="footer-social-icons">
+					<a href="mailto:erin@fiftyshadesofgreenok.com" target="_blank">
+						<svg class="email-icon">
+							<use xlink:href="#email-icon"></use>
+						</svg>
+					</a>
+					<a href="https://www.facebook.com/Fifty-Shades-of-Green-422370147946617/?fref=ts"  target="_blank">
+						<svg class="fb-icon">
+							<use xlink:href="#fb-icon"></use>
+						</svg>
+					</a>
+				</div>
+				
+				<div class="copyright_section">
+					<p class="copyright">Copyright &copy; 2017 Fifty Shades of Green.</p>
+				</div>
+			</footer>
+		</div> 
+	<script type="text/javascript" src="dist/js/app.min.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
+	</body>
+</html>

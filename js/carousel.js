@@ -1,10 +1,4 @@
-/************************HOMEPAGE CAROUSEL******************************/
-/* $('.single-item').slick({
-	dots          :  true,
-	autoplay      :  false
-});
 
-$('button.slick-arrow').removeAttr('style'); */
 /************************TESTIMONIALS CAROUSEL******************************/
 $('.testimonials').slick({
 	dots          :  false,
@@ -22,7 +16,6 @@ $('.testimonials').slick({
   slidesToScroll: 1,
   arrows: true,
   fade: true,
-  asNavFor: '.photo_gallery_nav',
 });
 
 $('.photo_gallery_nav').slick({

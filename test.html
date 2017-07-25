@@ -2,18 +2,28 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Shades of Green</title>
+		<title>Ron</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			.testDiv {
+				transition: margin 0.3s;
+			}
+		</style>
 	</head>
 	<body id="scrollTop">
 
-		<div id="container">
-			<img src="assets/img/proBG.jpg" />
-		</div>
+	<div>Hello World</div>
+	<div class="testDiv">Hello Dude<span>Whats Up</span></div>
+	
 	
 
 	<script type="text/javascript" src="dist/js/app.min.js"></script>
+	<script type="text/javascript">
+		$('.testDiv').on('click', function() {
+			$(this).css('margin', '50px 50px');
+		})
+	</script>
 	<script type="text/javascript" src="js/carousel.js"></script>
 	</body>
 </html>

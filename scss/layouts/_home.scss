@@ -67,21 +67,37 @@
 	}
 }
 .carousel_info_box {
-	background: rgba(0,0,0,0.7);
+/* 	background: rgba(0,0,0,0.7); */
 	padding: 22px 13px;
 	position: absolute;
-	bottom: 25px;
-	right: 25px;
+	top: 0;
+	right: 50px;
 	width: 60%;
-	max-width: 450px;
+	max-width: 510px;
 	z-index: 100;
-	display: none;
+
 	
 	.info_box_title {
 		margin: 0;
+		color: #FFE761;
+		text-transform: uppercase;
+		font-weight: bold;
 	}
 	.info_box_paragraph {
 		margin: 5px 0;
+	}
+	
+	.get_started {
+		display: inline-block;
+		padding: 5px 10px;
+		border: 2px solid #FFE761;
+		border-radius: 10px;
+		font-size: 1.5em;
+		color: #FFE761;
+		text-transform: uppercase;
+		background: rgb(66, 107, 72);
+		font-weight: bold;
+		margin-top: 8px;
 	}
 }
 .carousel_cont_1 .carousel_info_box {
@@ -252,12 +268,12 @@ li.service_item {
 			
 			p {
 				width: 100%;
-				padding: 10px;
 				color: white;
 				text-align: center;
-				font-size: 20px;
-				letter-spacing: 3px;
+				font-size: 25px;
+				letter-spacing: 2px;
 				font-weight: 100;
+				margin: 5px;
 			}
 			
 			li {
