@@ -723,7 +723,7 @@ ul.shrink_nav_list a {
 
 .services_list_shrink_adjustment {
   left: 0 !important;
-  height: 180px !important; }
+  height: 120px !important; }
   .services_list_shrink_adjustment a {
     color: grey !important; }
   .services_list_shrink_adjustment .nav-list li a {
@@ -961,7 +961,7 @@ ul.services_list {
   background: #eaeaea; }
 
 li.service_item {
-  flex-basis: 33.333333%;
+  flex-basis: 50%;
   position: relative;
   transform: translateZ(0); }
   @media (max-width: 750px) {
