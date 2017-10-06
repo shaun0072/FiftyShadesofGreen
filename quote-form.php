@@ -150,9 +150,13 @@
 					$txt = "Name: ". $_POST['name'] . "\n Email: " . $_POST['email'] . "\n Phone: " . $_POST['phone'] . "\n Address: " . $_POST['address'] . "\n Comment: " . $_POST['comment'] ;
 					$headers = "Reply-To: " . $_POST['email'];
 					
-					mail($to,$subject,$txt,$headers);
+					if(mail($to,$subject,$txt,$headers)) {
+						echo  "<h1>The email has been sent</h1>";
+					} else {
+						echo  "<h1>PROBLEM!</h1>";
+					}
 				
-					echo  "<h1>The email has been sent</h1>";
+					
 					
 					echo "<p>Name: " . $_POST['name'] . "</p>";
 					echo "<p><span>Email: </span><span>" .  $_POST['email'] . "</span></p>";
@@ -260,7 +264,9 @@
 				</div>
 				
 				<div class="copyright_section">
-					<p class="copyright">Copyright &copy; 2017 Fifty Shades of Green.</p>
+					<p class="copyright">Copyright &copy; 2017 Fifty Shades of Green</p>
+					<span>|</span>
+					<p class="privacy_policy"><a href="privacy_policy.html">Privacy Policy</a></p>
 				</div>
 			</footer>
 		</div> 

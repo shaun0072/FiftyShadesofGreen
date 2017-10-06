@@ -1367,14 +1367,24 @@ footer hr {
     height: 21px;
     margin: 0 7px; }
 
-/************************COPYRIGHT SECTION******************************/
+/************************COPYRIGHT/PRIVACY POLICY SECTION******************************/
 .copyright_section {
   margin: 30px 0 0;
   background: #cccccc; }
+  .copyright_section .privacy_policy,
+  .copyright_section .copyright {
+    margin: 0 5px; }
   .copyright_section .copyright {
     padding: 30px 0;
     font-size: 13px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: inline-block; }
+  .copyright_section .privacy_policy {
+    display: inline-block;
+    color: black;
+    font-size: 13px; }
+    .copyright_section .privacy_policy :visited {
+      color: black; }
 
 .about_section .about_main_pic_container {
   margin: 0 auto;
