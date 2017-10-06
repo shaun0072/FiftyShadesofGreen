@@ -356,11 +356,15 @@ footer hr {
 	.privacy_policy,
 	.copyright {
 		margin: 0 5px;
+		font-size: 13px;
+		
+		@include mobile {
+			font-size: 10px;
+		}
 	}
 	
 	.copyright {
 		padding: 30px 0;
-		font-size: 13px;
 		margin-bottom: 0;
 		display: inline-block;
 	}
@@ -368,7 +372,6 @@ footer hr {
 	.privacy_policy {
 		display: inline-block;
 		color: black;
-		font-size: 13px;
 		
 		:visited {
 			color: black;

@@ -36,11 +36,23 @@ ul.submenu {
 		font-size: 2.0em;
 		letter-spacing: 1.2px;
 		font-weight: 600;
+		
+		@include mobile {
+			font-size: 1.5em;
+			line-height: 26px;
+			letter-spacing: 1px;
+		}
 	}
 	.info_box_paragraph{
 		font-size: 1.1em;
 		line-height: 1.15em;
 		font-weight: 400;
+		
+		@include mobile {
+			font-size: 0.8em;
+			font-weight: 600;
+			line-height: 1em;
+		}
 	}
 }
 .carousel_cont_4 .carousel_info_box {
