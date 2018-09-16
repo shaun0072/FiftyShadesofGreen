@@ -1693,6 +1693,9 @@ footer hr {
   width: 85%;
   margin: 0 auto;
   position: relative; }
+  @media (max-width: 750px) {
+    .photo_gallery div {
+      height: 250px; } }
 
 .photo_gallery img {
   height: 100%;

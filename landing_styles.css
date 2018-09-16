@@ -1,0 +1,435 @@
+/***********************************FIRST SECTION*********************************/
+.div1 {
+	background: #F4F0D2;
+	height: 262px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.holiday_lights {
+	flex-basis: 33.3%;
+}
+.HLcontainer {
+	margin: 0 auto;
+	text-align: center;
+}
+.HLcontainer img {
+	display: block;
+	margin: 30px auto 0;
+}
+.FSsymbol {
+	flex-basis: 33.3%;	
+	position: relative;
+}
+.FScontainer {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	right: 9%;
+	top: 48%;
+}
+.phone {
+	flex-basis: 33.3%;
+	position: relative;
+}
+.phoneContainer {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 35px;
+	position: absolute;
+	left: 5%;
+    top: 59%;
+}
+.phoneContainer a{
+	text-decoration: none;
+	color: inherit;
+}
+/***********************************SECOND SECTION*********************************/
+.div2 {
+	background: #F4F0D2;
+	height: 175px;
+	padding-top: 50px;
+}
+.inside_div2 {
+	background: grey url('assets/img/christmas-bg.png') no-repeat center;
+	background-size: cover;
+	background-position: 0 -87px;
+	height: 100%;
+	-webkit-clip-path: polygon(50% 70%, 100% 0, 100% 30%, 50% 100%, 0 30%, 0 0);
+	clip-path: polygon(50% 70%, 100% 0, 100% 30%, 50% 100%, 0 30%, 0 0);
+}
+
+/***********************************THIRD SECTION*********************************/
+.inside_div3 {
+	background: #F4F0D2;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.info {
+	flex-basis: 50%;
+	padding: 0 20px 0 40px;
+	font-family: 'Cabin Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.info li {
+	margin: 10px 0;
+}
+.pic {
+	flex-basis: 50%;
+}
+.picContainer {
+	padding: 50px;
+}
+.inside_div3 img {
+	width: 100%;
+}
+/***********************************DIVIDER SECTION*********************************/
+.divider {
+	width: 100%;
+	height: 82px;
+	background: url(assets/img/christmas-bg.png) no-repeat center;
+	margin: 0 auto;
+	background-size: 1500px;
+	background-position: 50% -628px;
+}
+/***********************************FOURTH SECTION*********************************/
+.div4 {
+	background: #F4F0D2;
+}
+h3 {
+	font-family: 'Cabin Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 29px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.myForm {
+	display: flex;
+	flex-wrap: nowrap;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 21px;
+	font-weight: bold;
+	padding: 30px;
+	position: relative;
+}
+.box1,
+.box2 {
+	flex-basis: 50%;
+	overflow: hidden;
+	padding: 10px;
+}
+.box1 input {
+	width: 100%;
+}
+.box1 label {
+	float: left;
+}
+.box1 span {
+	display: block;
+    overflow: hidden;
+    padding: 0 5px
+}
+input {
+	font-size: 20px;
+	color: #c15151;
+	padding: 5px 0;
+}
+label[for^="lighting"],
+label[for^="property"] {
+	font-size: 16px;
+	text-transform: none;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	margin-left: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+input[type="submit"] {
+	border: 2px solid green;
+	outline: 0;
+	background: transparent;
+	padding: 12px;
+	border-radius: 30px;
+	font-size: 40px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 590px;
+	left: calc(50% - 200px);
+	cursor: pointer;
+	z-index: 10;
+	font-style: italic;
+}
+textarea {
+	border: 1px solid black;
+	outline: 0;
+	background: #efefef;
+	width: 100%;
+	font-size: 14px;
+}
+.inputWrapper {
+	margin-top: 11px;
+}
+.response {
+	margin: 0;
+    padding: 50px 0;
+    text-align: center;
+	color: #c15151;
+}
+/***********************************FITH SECTION*********************************/
+.div5 {
+	width: 100%;
+	height: 488px;
+	background: url(assets/img/christmas-bg.png) no-repeat center;
+	margin: 0 auto;
+	background-size: 1500px 1500px;
+	background-position: 50% -1013px;
+}
+.snow {
+	background-color: transparent;
+	background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
+	animation: snow 20s linear infinite;
+	height: 100%;
+	width: 100%;
+	animation-fill-mode: both;
+}
+@keyframes snow {
+	0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+	50% { background-color: transparent }
+	100% {
+		background-position: 500px 1000px, 400px 400px, 300px 300px;
+		background-color: transparent;
+	}
+}
+/***********************************Mobile Queries*********************************/
+@media only screen and (max-width: 970px) {
+	
+	.FScontainer {
+		width: 78px;
+		right: 16%;
+		top: 54%;
+	}
+    .phoneContainer {
+		font-size: 28px;
+	}
+	.myForm {
+		font-size: 18px;
+	}
+	.info li {
+		margin: 8px 0;
+		font-size: 15px;
+	}
+	h3 {
+		font-size: 26px;
+	}
+	label[for^="lighting"],
+	label[for^="property"] {
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 820px) {
+	.div1 {
+		background: #F4F0D2;
+		height: 118px;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.HLcontainer img {
+		display: block;
+		margin: 34px auto 0;
+	}
+	.phoneContainer {
+		font-size: 18px;
+		left: -18%;
+		top: 96%;
+	}
+	.inside_div2 {
+		-webkit-clip-path: polygon(50% 70%, 100% 0, 100% 30%, 50% 100%, 0 30%, 0 0);
+		clip-path: polygon(50% 85%, 100% 0, 100% 15%, 50% 100%, 0 15%, 0 0);
+	}
+	.divider {
+		height: 45px;
+	}
+	.FScontainer {
+		width: 58px;
+		right: -9%;
+		top: 84%;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.myForm {
+		font-size: 15px;
+		padding: 10px 5px 30px;
+	}
+	.box1,
+	.box2 {
+		padding: 5px;
+	}
+	input[type="submit"] {
+		top: 426px;
+		font-size: 24px;
+		left: calc(50% - 114px);
+	}
+	.div5 {
+		height: 335px;
+		background-size: 1000px 1000px;
+		background-position: 50% -662px;
+	}
+}
+@media only screen and (max-width: 675px) {
+	.FSsymbol,
+	.holiday_lights,
+	.phone {
+		flex-basis: 33%;
+	}
+	.HLcontainer img {
+		margin: 38px auto 0;
+	}
+	.FScontainer {
+		width: 41px;
+		right: 11%;
+		top: 23%;
+	}
+	.phoneContainer {
+		font-size: 18px;
+		left: -3%;
+		top: 31%;
+	}
+	.info {
+		list-style-type: none;
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.pic {
+		flex-basis: 100%;
+		padding: 0;
+	}
+	.picContainer {
+		 padding: 13px 100px 33px;
+	}
+	.info li {
+		margin: 18px 0;
+		font-size: 15px;
+	}
+	.inside_div3 {
+		flex-wrap: wrap;
+		margin-bottom: 0;
+	}
+	.div5 img {
+		margin-top: -345px;
+		width: 550px;
+		z-index: -3000;
+		position: relative;
+		margin-left: calc(50% - 275px);
+	}
+	.myForm {
+		flex-wrap: wrap;
+	}
+	.box1,
+	.box2 {
+		flex-basis: 100%;
+	}
+	textarea {
+		width: 95%;
+	}
+	input[type="submit"] {
+    position: static;
+    font-size: 23px;
+    text-align: center;
+    margin: 17px auto 1px;
+    padding: 10px 24px;
+}
+
+}
+@media only screen and (max-width: 515px) {
+	.div1 {
+    background: #F4F0D2;
+    height: 76px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.holiday_lights {
+	flex-basis: 100%;
+}
+	.HLcontainer img {
+    margin: 4px auto 0;
+}
+	.FScontainer {
+    width: 35px;
+    position: static;
+    margin: 8px 0 0 8px;
+}
+.phoneContainer {
+    font-size: 15px;
+    text-align: right;
+    margin-left: -46px;
+    margin-top: 10px;
+	position: static;
+}
+.div2 {
+    background: #F4F0D2;
+    height: 90px;
+}
+	.info {
+    padding: 10px;
+}
+	.picContainer {
+    padding: 0px 23px 16px;
+}
+	.info li {
+    margin: 11px 0;
+    font-size: 13px;
+}
+	.inside_div3 {
+		flex-wrap: wrap;
+		margin-bottom: 0;
+	}
+	.divider {
+    height: 28px;
+}
+	.div5 img {
+		margin-top: -345px;
+		width: 550px;
+		z-index: -3000;
+		position: relative;
+		margin-left: calc(50% - 275px);
+	}
+	.myForm {
+		font-size: 13px;
+	}
+	input[type="text"], input[type="email"], input[type="tel"] {
+		font-size: 16px;
+	}
+	.breakAfter {
+		display: block;
+		margin: 3px 0;
+	}
+	textarea {
+		width: 95%;
+	}
+	input[type="submit"] {
+    font-size: 18px;
+    width: 100%;
+}
+.div5 {
+    height: 192px;
+    background-size: 500px 500px;
+    background-position: 50% -302px;
+}
+.response {
+	font-size: 16px;
+}
+}

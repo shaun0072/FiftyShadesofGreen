@@ -1,29 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<title>Ron</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.css" />
-		<style>
-			.testDiv {
-				transition: margin 0.3s;
-			}
-		</style>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed:700" rel="stylesheet">
+		<link rel="stylesheet" href="landing_style.css" />
+		<link rel="stylesheet" href="landing_styles.css" />
 	</head>
-	<body id="scrollTop">
-
-	<div>Hello World</div>
-	<div class="testDiv">Hello Dude<span>Whats Up</span></div>
+	<body>
 	
-	
-
-	<script type="text/javascript" src="dist/js/app.min.js"></script>
-	<script type="text/javascript">
-		$('.testDiv').on('click', function() {
-			$(this).css('margin', '50px 50px');
-		})
-	</script>
-	<script type="text/javascript" src="js/carousel.js"></script>
+		<div class="div1">
+			<div class="FSsymbol">
+				<div class="FScontainer">
+					<img src="assets/svg/FSsymbol.svg" />
+				</div>
+			</div>
+			
+			<div class="holiday_lights">
+				<div class="HLcontainer">
+					<img src="assets/svg/HolidayLights.svg" />
+				</div>			
+			</div>
+			
+			<div class="phone">
+				<div class="phoneContainer">918-555-4444</div>
+			</div>
+		</div>
+		
+		<div class="div2">
+			<div class="inside_div2">
+				<div class="snow"></div>
+			</div>
+		</div>
+		
+		<div class="div3">
+			<div class="inside_div3">
+					<ul class="info">
+						<li>Create a feeling of home based around your personal style.</li>
+						<li>Options include Gutters and/or roofline or custom package.</li>
+						<li>Traditional - Modern - Country</li>
+						<li>More than just lights! We can tailor a package with additional greenary, wreaths, yard statuaries etc. to create your ultimate idea of the perfect display.</li>
+					</ul>
+				<div class="pic">
+					<div class="picContainer">
+						<img src="assets/img/stringLights.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divider">
+			<div class="snow"></div>
+		</div>
+		
+		<div class="div4">
+			<h3>Contact Form</h3>
+			<form method="POST" class="myForm">
+				<div class="box1">
+					<div class="inputWrapper"><label for="name">Name: </label><span><input type="text" id="name" name="name"></span></div>
+					<div class="inputWrapper"><label for="email">Email: </label><span><input type="email" id="email" name="email"></span></div>
+					<div class="inputWrapper"><label for="phone">Phone: </label><span><input type="tel" id="phone" name="phone"></span></div>
+					<div class="inputWrapper"><label for="address">Address: </label><span><input type="text" id="address" name="address"></span></div>			
+				</div>
+				
+				<div class="box2">
+					<div class="inputWrapper">
+						<label class="breakAfter">Property Type: </label>
+						<input type="radio" id="property_type1" name="property_type" value="Commerical"/><label for="property_type1">Commerical</label>
+						<input type="radio" id="property_type2" name="property_type" value="Residential"/><label for="property_type2">Residential</label><br />
+					</div>
+					
+					<div class="inputWrapper">
+						<label class="breakAfter">Lighting Type: </label>
+						<input type="checkbox" id="lighting_type1" name="lighting_type" value="front-face"><label for="lighting_type1">Front Face</label>
+						<input type="checkbox" id="lighting_type2" name="lighting_type" value="roofline"><label for="lighting_type2">Roofline</label>
+						<input type="checkbox" id="lighting_type3" name="lighting_type" value="custom"><label for="lighting_type3">Custom</label><br />
+						
+						<div class="inputWrapper">
+							<label for="comments">Comments: </label><br />
+							<textarea></textarea>
+						</div>
+					</div>
+				</div>
+				<input type="submit" value="Click Here to Submit!"/>
+			</form>
+		</div>
+		
+		<div class="div5">
+			<div class="snow"></div>
+		</div>
+		
 	</body>
 </html>

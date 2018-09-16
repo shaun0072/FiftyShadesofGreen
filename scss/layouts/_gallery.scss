@@ -9,6 +9,10 @@
 		width: 85%;
 		margin: 0 auto;
 		position: relative;
+		
+		@include mobile {
+			height: 250px;
+		}
 	}
 	
 	img {
