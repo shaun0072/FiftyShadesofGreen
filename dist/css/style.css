@@ -425,10 +425,20 @@ ul.submenu a {
     font-size: 2.0em;
     letter-spacing: 1.2px;
     font-weight: 600; }
+    @media (max-width: 750px) {
+      .carousel_info_box .info_box_title {
+        font-size: 1.5em;
+        line-height: 26px;
+        letter-spacing: 1px; } }
   .carousel_info_box .info_box_paragraph {
     font-size: 1.1em;
     line-height: 1.15em;
     font-weight: 400; }
+    @media (max-width: 750px) {
+      .carousel_info_box .info_box_paragraph {
+        font-size: 0.8em;
+        font-weight: 600;
+        line-height: 1em; } }
 
 .carousel_cont_4 .carousel_info_box input[type="text"] {
   color: black;
@@ -842,10 +852,16 @@ ul.shrink_nav_list a {
     background: #426b48;
     font-weight: bold;
     margin-top: 8px; }
+    @media (max-width: 750px) {
+      .carousel_info_box .get_started {
+        font-size: 1.1em; } }
 
 .carousel_cont_1 .carousel_info_box {
   bottom: 25px;
   right: 30px; }
+  @media (max-width: 750px) {
+    .carousel_cont_1 .carousel_info_box {
+      left: 10px; } }
 
 .carousel_cont_2 .carousel_info_box {
   bottom: 25px;
@@ -1373,16 +1389,19 @@ footer hr {
   background: #cccccc; }
   .copyright_section .privacy_policy,
   .copyright_section .copyright {
-    margin: 0 5px; }
+    margin: 0 5px;
+    font-size: 13px; }
+    @media (max-width: 750px) {
+      .copyright_section .privacy_policy,
+      .copyright_section .copyright {
+        font-size: 10px; } }
   .copyright_section .copyright {
     padding: 30px 0;
-    font-size: 13px;
     margin-bottom: 0;
     display: inline-block; }
   .copyright_section .privacy_policy {
     display: inline-block;
-    color: black;
-    font-size: 13px; }
+    color: black; }
     .copyright_section .privacy_policy :visited {
       color: black; }
 
@@ -1674,6 +1693,9 @@ footer hr {
   width: 85%;
   margin: 0 auto;
   position: relative; }
+  @media (max-width: 750px) {
+    .photo_gallery div {
+      height: 250px; } }
 
 .photo_gallery img {
   height: 100%;
